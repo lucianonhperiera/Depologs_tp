@@ -65,5 +65,37 @@
             </div>
         </div>
     </div>
+    <div class="texto-cambiante">
+        <div class="cardcambiante">
+            <a class="card1" href="#">
+             <p id="textoCambiante">Texto 1</p>
+             <div class="go-corner" href="#">
+               <div class="go-arrow">
+                 
+               </div>
+             </div>
+           </a>
+         </div>
+        
+    </div>
+
+    <script>
+        // Array de textos que quieres mostrar
+        const textos = ["tus papas son primos", "los perros pueden ladrar pero no maullar", "esternocleidomastoideo", "tus perros tienen 4 patas"];
+        let currentIndex = 0;
+
+        // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
+        function cambiarTexto() {
+            currentIndex = (currentIndex + 1) % textos.length;
+            const elementoTexto = document.getElementById("textoCambiante");
+            elementoTexto.textContent = textos[currentIndex];
+        }
+
+        // Cambiar el texto inicial
+        cambiarTexto();
+
+        // Establecer un intervalo para cambiar el texto cada 2 minutos
+        setInterval(cambiarTexto, 30000);
+    </script>
 </body>
 </html>
