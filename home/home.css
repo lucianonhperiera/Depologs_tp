@@ -1,0 +1,28 @@
+#menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+#menu-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-list li {
+    margin: 10px 0;
+}
+
+#menu-list a {
+    text-decoration: none;
+    color: #333;
+}
