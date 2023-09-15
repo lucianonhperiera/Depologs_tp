@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--llamado a los estilos-->
     <link rel="stylesheet" href="home_pages.css">
     <link rel="stylesheet" href="botones.css">
     <link rel="stylesheet" href="cartas_de_presentacion.css">
+    <link rel="stylesheet" href="carta f1.css">
     <link rel="stylesheet" href="menu.css">
+    <!--llamado a los scripts-->
+    <!--coasitas del mismo html no tocar-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>depologs secciones</title>
@@ -12,23 +16,23 @@
         body 
         {
             background: #3ca0df; /* Fallback color for old browsers */
-            background: -webkit-linear-gradient(to right, #2596ca, #13415e); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #134964, #0e4058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: -webkit-linear-gradient(to right, #248cbd, #0e3750); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #134964, #3595c2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
     </style>
 </head>
 <body>
     <div class="botonera">
-        <button class="animated-button">
-            <span>deportes</span>
+        <button class="animated-button" onclick="window.location.href='deportes/home_deportes.html'">
+            <span>DEPORTES</span>
             <span></span>
         </button>
-        <button class="animated-button">
-            <span>biblioteca</span>
+        <button class="animated-button" onclick="window.location.href='biblioteca_videos/home_videos.html'">
+            <span>BIBLIOTECA</span>
             <span></span>
         </button>
-        <button class="animated-button">
-            <span>estadisticas</span>
+        <button class="animated-button" onclick="window.location.href='estadisticas/home_estadisticas.html'">
+            <span>ESTADISTICAS</span>
             <span></span>
         </button>
     </div>
@@ -125,13 +129,15 @@
             </div>
         </div>
         <div class="card">
-            <div class="fotos">
+            <div class="">
                 <div class="content">
                 <p class="heading">
                     F1
                 </p>
                 <p class="para">
-                    nuestros deportes 
+                    El Campeonato Mundial de Fórmula 1 de la FIA, más conocido como Fórmula 1, F1 o Fórmula Uno, 
+                    es la principal competición de automovilismo internacional y el campeonato de deportes de motor más popular y prestigioso del mundo. 
+                    La entidad que la dirige es la Federación Internacional del Automóvil.
                 </p>
                 <button class="btn">Read more</button>
                 </div>
@@ -184,6 +190,8 @@
 
         // Establecer un intervalo para cambiar el texto cada 10 segundos
         setInterval(cambiarTexto, 10000);
+
     </script>
+
 </body>
 </html>
