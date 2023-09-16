@@ -266,6 +266,7 @@
     height: 300px;
     width: 100px;
 }
+/*estilos y posicionamiento de reproductor de videos*/
 .videos{
     padding: 300px;
     padding-top: 60px;
@@ -277,6 +278,10 @@
     align-items: center;
     height: 300px;
     width: 100px;
+}
+.textosinfo{
+  display: block;
+  align-items: center;
 }
 /*estilos de botones referenciales*/
 /* === removing default button style ===*/
@@ -292,7 +297,7 @@
 .button {
   --border-right: 6px;
   --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37FF8B;
+  --animation-color: #37c0ff;
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
