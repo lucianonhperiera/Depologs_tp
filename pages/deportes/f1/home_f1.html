@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--estilos de css-->
     <link rel="stylesheet" href="home_f1.css">
+    <link rel="stylesheet" href="textosinformativos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neues">
+    <!--llamados de paginas-->
+    <link rel="stylesheet" href="tabla de puntos/puntos_pilotos.html">
+    <!--realiza llamados a los diferentes scripts-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--cositas del html que no se tocan-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Depologs F1</title>
@@ -11,7 +18,7 @@
         {
             background: #3ca0df; /* Fallback color for old browsers */
             background: -webkit-linear-gradient(to right, #2596ca, #13415e); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #134964, #0e4058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, #2596ca, #13415e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
     </style>
 </head>
@@ -43,7 +50,7 @@
         </button>
    </div>
     -->
-    <div>
+    <div class="referenciales">
         <ul>
             <li>
                 <a href="#puntos">
@@ -72,12 +79,20 @@
            <li>
                 <a href="#gps">
                 <button data-text="Awesome" class="button">
-                    <span class="actual-text">&nbsp;gps&nbsp;</span>
-                    <span class="hover-text" aria-hidden="true">&nbsp;gps&nbsp;</span>
+                    <span class="actual-text">&nbsp;gp&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;gp&nbsp;</span>
                 </button>
                 </a>
            </li>
         </ul>
+
+    </div>
+    <div class="videos">
+        <video controls width="1020" height="500" autoplay muted>
+            <source src="" type="video/mp4">
+            <source src="" type="video/mp4">
+            Tu navegador no admite la reproducción de video.
+        </video>
     </div>
     <div class="contprincipal">
         <!--
@@ -87,26 +102,22 @@
         </div>
         -->
         <!--reproductor de videos-->
-        <div class="videos">
-            <video controls width="640" height="360" autoplay muted>
-                <source src="" type="video/mp4">
-                <source src="" type="video/mp4">
-                Tu navegador no admite la reproducción de video.
-            </video>
-        </div>
+        
         <div class="textosinfo">
             <div class="puntos" id="puntos">
-                hola en esta secciones
+                <p style="font-family: Bebas Neue, sans-serif;">TABLA DE PUNTOS DE CONTRUCTORES Y PILOTOS</p>
+                <iframe src="tabla de puntos/puntos_pilotos.html" frameborder="0"></iframe>
             </div>
             <div class="pilotos" id="pilotos">
-                pilotos
+                <p style="font-family: Bebas Neue, sans-serif;">PILOTOS DE LA FORMULA 1</p>
             </div>
             <div class="fechas" id="fechas">
-                fechas
+                <p style="font-family: Bebas Neue, sans-serif;">FECHAS</p>
             </div>
             <div class="gps" id="gps">
-                gps
+                <p style="font-family: Bebas Neue, sans-serif;">GRAN PRIX</p>
             </div>
+            
         </div>
     </div>
     

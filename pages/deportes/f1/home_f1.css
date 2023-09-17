@@ -257,31 +257,55 @@
     height: 50vh; /* Altura del viewport */
 }
 /*estilos de las estadisticas*/
-.contprincipal{
-    text-align: center;
-    display:inline-block;
-    margin-top: 40px;
-    margin: 20px;
-    align-items: center;
-    height: 300px;
-    width: 100px;
+.contprincipal {
+  /*padding-top: 20px;*/
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  height: 100vh; /* Esto es opcional, pero hace que el div ocupe toda la altura de la ventana */
 }
+/*estilos de textos referenciales*/
+.referenciales{
+  margin-bottom: 20px;
+  margin-block: 20px;
+  justify-content: center;
+}
+.referenciales ul {
+  list-style-type: none;
+  padding: 0;
+  background-image: url('1_GuII-UeSxb8nKklfdTaQDA.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+  background-position: center; /* Posición de la imagen en el centro */
+}
+
+.referenciales li {
+  margin-bottom: 10px;
+}  
 /*estilos y posicionamiento de reproductor de videos*/
+
 .videos{
-    padding: 300px;
-    padding-top: 60px;
-    position: relative;
-    text-align: center;
-    display:inline-block;
-    margin-top: 15%;
-    margin: 0 auto;
-    align-items: center;
-    height: 300px;
-    width: 100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  
 }
+
+
+/*contenedor de los textos informativos*/
 .textosinfo{
   display: block;
   align-items: center;
+  color:#ffffff; 
+  font-family: Bebas Neue;
+  font-size: 18px;
 }
 /*estilos de botones referenciales*/
 /* === removing default button style ===*/
@@ -297,7 +321,7 @@
 .button {
   --border-right: 6px;
   --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37c0ff;
+  --animation-color: #ff3737;
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
