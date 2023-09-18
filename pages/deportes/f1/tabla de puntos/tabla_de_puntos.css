@@ -1,0 +1,7 @@
+.tabladepuntos{
+    color: beige;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    /*align-items: center; /* Centrar verticalmente */
+    height: 50vh; /* Altura del viewport */
+}
