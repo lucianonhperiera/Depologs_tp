@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,4 +21,73 @@
     </div>
     <script src="home.js"></script>    
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depologs</title>
+    <style>
+        body 
+        {
+            background: #3ca0df; /* Fallback color for old browsers */
+            background: -webkit-linear-gradient(to right, #2596ca, #13415e); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #134964, #0e4058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style>
+</head>
+<body>
+    <div class="botonera">
+        <button class="animated-button">
+            <span>deportes</span>
+            <span></span>
+        </button>
+        <button class="animated-button">
+            <span>biblioteca</span>
+            <span></span>
+        </button>
+        <button class="animated-button">
+            <span>estadisticas</span>
+            <span></span>
+        </button>
+    </div>
+   
+    
+    <div class="texto-cambiante">
+        <div class="cardcambiante">
+            <a class="card1" href="#">
+             <p id="textoCambiante">Texto 1</p>
+             <div class="go-corner" href="#">
+               <div class="go-arrow">
+                 
+               </div>
+             </div>
+           </a>
+         </div>
+        
+    </div>
+    
+    <script>
+        // Array de textos que quieres mostrar
+        const textos = ["EL FUTBOL SE JUEGA CON UNA PEROTA", "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO",
+        "A LUCAS LE GUSTA EL PENE ", "EL PAN ESTA SOBREVALORADO"];
+        let currentIndex = 0;
+
+        // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
+        function cambiarTexto() {
+            currentIndex = (currentIndex + 1) % textos.length;
+            const elementoTexto = document.getElementById("textoCambiante");
+            elementoTexto.textContent = textos[currentIndex];
+        }
+
+        // Cambiar el texto inicial
+        cambiarTexto();
+
+        // Establecer un intervalo para cambiar el texto cada 30 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+</body>
+>>>>>>> depologs_main
 </html>

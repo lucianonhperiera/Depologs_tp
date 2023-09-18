@@ -256,3 +256,25 @@
     align-items: center; /* Centrar verticalmente */
     height: 50vh; /* Altura del viewport */
 }
+/*estilos de las estadisticas*/
+.contprincipal{
+    text-align: center;
+    display:inline-block;
+    margin-top: 40px;
+    margin: 20px;
+    align-items: center;
+    height: 300px;
+    width: 100px;
+}
+.videos{
+    padding: 300px;
+    padding-top: 60px;
+    position: relative;
+    text-align: center;
+    display:inline-block;
+    margin-top: 15%;
+    margin: 0 auto;
+    align-items: center;
+    height: 300px;
+    width: 100px;
+}

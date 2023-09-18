@@ -1,21 +1,11 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-=======
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="home_videos.css">
-    
+    <link rel="stylesheet" href="home_f1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Depologs Biblioteca</title>
+    <title>Depologs F1</title>
     <style>
         body 
         {
@@ -27,20 +17,41 @@
 </head>
 <body>
     <div class="botonera">
-        <button class="animated-button" onclick="window.location.href = '../home_pages.html'">
+        <button class="animated-button" onclick="window.location.href = '../../home_pages.html'">
             <span>ATRAS</span>
             <span></span>
         </button>
-        <button class="animated-button" onclick="window.location.href = '../deportes/home_deportes.html'">
+        <button class="animated-button" onclick="window.location.href = '../home_deportes.html'">
             <span>DEPORTES</span>
             <span></span>
         </button>
-        <button class="animated-button" onclick="window.location.href = '../estadisticas/home_estadisticas.html'">
+        <button class="animated-button" onclick="window.location.href='../../biblioteca_videos/home_videos.html'">
+            <span>BIBLIOTECA</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href='../../estadisticas/home_estadisticas.html'">
             <span>ESTADISTICAS</span>
             <span></span>
         </button>
     </div>
    
+    <div class="contprincipal">
+        <!--
+        <div class="estadisticas">
+            <div id="estadisticas"></div>
+            <canvas id="grafico-de-barras" width="400" height="200"></canvas>
+        </div>
+        -->
+        <!--reproductor de videos-->
+        <div class="videos">
+            <video controls width="640" height="360" autoplay muted>
+                <source src="" type="video/mp4">
+                <source src="" type="video/mp4">
+                Tu navegador no admite la reproducción de video.
+            </video>
+        </div>
+    </div>
+
     <div class="texto-cambiante">
         <div class="cardcambiante">
             <a class="card1" href="#">
@@ -55,7 +66,10 @@
         
     </div>
     
-    
+    <script src="home_f1.js"></script>
+
+   
+
     <script>
         // Array de textos que quieres mostrar
         const textos = ["EL FUTBOL SE JUEGA CON UNA PEROTA", "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO",
@@ -75,6 +89,5 @@
         // Establecer un intervalo para cambiar el texto cada 30 segundos
         setInterval(cambiarTexto, 10000);
     </script>
->>>>>>> depologs_main
 </body>
 </html>
