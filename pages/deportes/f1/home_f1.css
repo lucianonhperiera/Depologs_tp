@@ -261,8 +261,8 @@
   margin: 20px;
   display: flex;
   flex-direction: column;
-  /*align-items: center; /* Centra horizontalmente */
-  /* justify-content: center; Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  /*justify-content: center; /*Centra verticalmente */
   height: 50vh; /* Esto es opcional, pero hace que el div ocupe toda la altura de la ventana */
 }
 /*estilos de textos referenciales*/
@@ -325,7 +325,7 @@
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
+  --text-stroke-color: rgb(255, 255, 255);
   --animation-color: #ff3737;
   --fs-size: 2em;
   letter-spacing: 3px;
@@ -358,8 +358,8 @@
 /* centra el texto que cambia */
 .texto-cambiante{
   margin-top: 20px;   
-  display: flex;
+  display: inline-block;
   justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
+  /*align-items: center; /* Centrar verticalmente */
   height: 50vh; /* Altura del viewport */
 }

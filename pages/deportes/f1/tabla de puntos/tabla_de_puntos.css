@@ -1,4 +1,5 @@
 .tabladepuntos{
+    margin-top: 40px;
     color: beige;
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
