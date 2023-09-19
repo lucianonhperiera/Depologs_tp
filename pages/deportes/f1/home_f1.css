@@ -265,6 +265,10 @@
   /*justify-content: center; /*Centra verticalmente */
   height: 50vh; /* Esto es opcional, pero hace que el div ocupe toda la altura de la ventana */
 }
+/*estilos de iframe puntos*/
+.puntos{
+  justify-content: center; /* Centrar horizontalmente */
+}
 /*estilos de textos referenciales*/
 .referenciales{
   margin-bottom: 20px;
