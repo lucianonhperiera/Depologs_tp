@@ -35,14 +35,7 @@
 </head>
 <body>
     <div class="botonera">
-        <button class="animated-button" onclick="window.location.href = 'puntos_pilotos.html'">
-            <span>PILOTOS</span>
-            <span></span>
-        </button>
-        <button class="animated-button" onclick="window.location.href = 'puntos_constructores.html'">
-            <span>CONTRUCTORES</span>
-            <span></span>
-        </button>
+        
     </div>
     <div class="cartaspresentacion">
         <!--estas son las cartas que de ven separadas-->
@@ -273,7 +266,7 @@
         </div>
         <div class="card">
             <p class="heading" style="font-family: Bebas Neue, sans-serif; color: #ffffff;">
-                VALTTRI BOTTAS
+                VALTTERI BOTTAS
             </p>
             <div class="valtteri">
                 <div class="content">
@@ -400,5 +393,56 @@
             </div>
         </div>
     </div>
+    <script>
+        function searchPilots() {
+            var input = document.querySelector('.input');
+            var searchText = input.value.toLowerCase();
+            var cards = document.querySelectorAll('.card');
+        
+            cards.forEach(function(card) {
+                var cardText = card.textContent.toLowerCase();
+                if (cardText.includes(searchText)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function resetSearch() {
+            var input = document.querySelector('.input');
+            input.value = '';
+            var cards = document.querySelectorAll('.card');
+            cards.forEach(function(card) {
+                card.style.display = 'block';
+            });
+        }
+        
+        // Agrega un manejador de eventos para detectar la pulsación de "Enter"
+        var input = document.querySelector('.input');
+        input.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                // Obtén el valor del campo de entrada
+                var searchText = input.value.toLowerCase();
+        
+                // Obtén todos los elementos con la clase .card (cartas de piloto)
+                var cards = document.querySelectorAll('.card');
+        
+                // Itera sobre las cartas de piloto y redirige al usuario a la carta del piloto que coincide con la búsqueda
+                cards.forEach(function(card) {
+                    var cardText = card.textContent.toLowerCase();
+                    if (cardText.includes(searchText)) {
+                        // Extrae el nombre del piloto del texto de la carta (asumiendo que está en un <p> con la clase .heading)
+                        var pilotName = card.querySelector('.heading').textContent.trim();
+                        
+                        // Redirige a la carta del piloto
+                        window.location.href = '#' + pilotName.replace(/\s+/g, '-').toLowerCase();
+                    }
+                });
+            }
+        });
+    </script>
+        
+        
 </body>
 </html>

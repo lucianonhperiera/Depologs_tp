@@ -291,7 +291,7 @@
   content: "";
   width: 4px;
   height: 28px;
-  background: #19173b;
+  background: #19173b00;
   border: 2px solid #ff1818;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -329,6 +329,10 @@
 }
 .pilotitos{
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centrar horizontalmente */
 }
 /*imagen de fechas*/
 .fechas{
@@ -343,6 +347,34 @@
 }
 .gps{
   margin-top: 20px;
+}
+.premio{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+.titulopremio{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centrar horizontalmente */ 
+}
+.imagenpremio{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centrar horizontalmente */ 
+}
+.infopremio{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centrar horizontalmente */ 
 }
 /*estilos de textos referenciales*/
 .referenciales{
