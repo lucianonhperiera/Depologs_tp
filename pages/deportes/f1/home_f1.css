@@ -266,12 +266,83 @@
   /*justify-content: center; /*Centra verticalmente */
   height: 50vh; /* Esto es opcional, pero hace que el div ocupe toda la altura de la ventana */
 }
+.titulo {
+  min-height: 53px;
+  min-width: 166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-12.74%, rgba(255, 110, 110, 0.5)), color-stop(56.76%, rgba(106, 224, 255, .271)));
+  background: linear-gradient(90deg, rgba(255, 110, 110, 0.5) -12.74%, rgba(216, 36, 36, 0.338) 56.76%);
+  border: 2px solid #b82121;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.titulo:before {
+  content: "";
+  width: 4px;
+  height: 28px;
+  background: #19173b;
+  border: 2px solid #ff1818;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  bottom: -7px;
+  left: 4px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.titulo:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  bottom: -2px;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #e81515;
+}
+
 /*estilos de iframe puntos*/
-.puntos{
+.puntitos{
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra horizontalmente */
   justify-content: center; /* Centrar horizontalmente */
+}
+/*estilos de pilotos*/
+.pilotos{
+  margin-top: 20px;
+}
+.pilotitos{
+  margin-top: 20px;
+}
+/*imagen de fechas*/
+.fechas{
+  margin-top: 20px;
+}
+.fechitas{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+.gps{
+  margin-top: 20px;
 }
 /*estilos de textos referenciales*/
 .referenciales{
