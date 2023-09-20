@@ -26,12 +26,13 @@
     display: inline-block;
     margin: 8px;
     padding: 12px 24px;
-    border:none;
+    border: none;
+    text-shadow: 2px 2px 3px black;
     font-size: 30px;
     background-color: inherit;
     border-radius: 100px;
     font-weight: 600;
-    color: rgba(4, 255, 0, 0.743);
+    color: rgb(253, 253, 253);
     box-shadow: 0 0 0 2px #0051ffff;
     cursor: pointer;
     overflow: hidden;
@@ -69,4 +70,53 @@
     width: 150px;
     height: 150px;
     opacity: 1;
+  }
+
+  /* animacion de ligas*/
+
+  .ligas {
+	
+    display: flex;
+    width:700px;
+    height: 40px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    text-shadow: 5px 5px 5px black;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 380px;
+    margin: 200px;
+    overflow: hidden;
+    
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 8s infinite;
+  }
+  
+  ul, p {
+    margin: 0;
+  }
+  
+  @keyframes cambiar {
+    
+    0%{ margin-top: 0;}
+    20%{ margin-top: 0;}
+    
+    25% {margin-top: -40px;}
+    50% {margin-top: -40px;}
+    
+    55% {margin-top: -80px;}
+    80% {margin-top: -80px;}
+    
+    85% {margin-top: -40px;}
+    95% {margin-top: -40px;}
+    
+    100% {margin-top: 0;}
   }
