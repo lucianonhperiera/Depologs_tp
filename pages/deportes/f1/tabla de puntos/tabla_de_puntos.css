@@ -7,3 +7,7 @@
     height: 50vh; /* Altura del viewport */
     font-family: Bebas Neue;
 }
+.imagenrandom{
+    margin-top: 20px;
+    justify-content: center; /* Centrar horizontalmente */
+}

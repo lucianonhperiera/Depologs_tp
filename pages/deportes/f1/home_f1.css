@@ -349,6 +349,7 @@
   margin-top: 20px;
 }
 .buscargp{
+  display: inline-block;
   margin-top: 20px;
   display: flex; /* Utiliza flexbox para controlar el diseño */
   justify-content: center; /* Centra los botones horizontalmente */
@@ -357,7 +358,7 @@
   margin-right: .3em !important;
 }
 .fancy {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.527);
   border: 2px solid #f31717;
   border-radius: 0;
   box-sizing: border-box;
@@ -394,6 +395,7 @@
  }
  
  .fancy .text {
+  font-family: Bebas Neue, sans-serif;
   font-size: 1.125em;
   line-height: 1.33333em;
   padding-left: 2em;
@@ -402,7 +404,7 @@
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(221, 30, 30);
+  color: rgb(240, 240, 240);
  }
  
  .fancy .top-key {
