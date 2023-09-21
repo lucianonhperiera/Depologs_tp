@@ -7,7 +7,7 @@
 
  body{
     background-image:url(./images/home_fondo_messi.jpg);
-    background-size: cover;
+    background-size:cover;
  }
 
 
@@ -67,7 +67,7 @@
   }
   
   .animated-button:hover span:last-child {
-    width: 150px;
+    width: 170px;
     height: 150px;
     opacity: 1;
   }
@@ -77,7 +77,8 @@
   .ligas {
 	
     display: flex;
-    width:700px;
+    justify-content: center;
+    width:800px;
     height: 40px;
     color: #fff;
     font-size: 40px;
@@ -89,7 +90,8 @@
     right: 0;
     bottom: 0;
     left: 380px;
-    margin: 200px;
+    margin-top: 200px;
+    margin-left: 200px;
     overflow: hidden;
     
   }
@@ -102,6 +104,7 @@
   
   ul, p {
     margin: 0;
+    font-size: 40px;
   }
   
   @keyframes cambiar {
@@ -119,4 +122,41 @@
     95% {margin-top: -40px;}
     
     100% {margin-top: 0;}
+  }
+
+.principal-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+.principal-1>img {
+  width: 250px;
+  height: 250px;
+}
+
+.principal-1>img:hover{
+  border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #00eeff;
+-webkit-box-shadow: 0px 0px 10px 10px #00eeff;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+transition: all .5s ease-in-out;
+-webkit-transition: all 1.2s ease-in-out;
+  }
+  
+  .principal-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .principal-2>img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .principal-2>img:hover {
+    filter: saturate(500%);
   }
