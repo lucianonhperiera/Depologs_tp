@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #382775; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 5px; /* Espaciado interior del encabezado */
+    display: flex; /* Usa flexbox para alinear elementos horizontalmente */
+    justify-content: space-between; /* Distribuye elementos horizontalmente */
+    align-items: center; /* Centra elementos verticalmente */
+    text-align: center;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400px;
+    font-size: 30px;
+}
+
+body{
+    background-image: url(./imagenes/fondo\ voley.jpg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.logo_header {
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    background-color: #382775;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
