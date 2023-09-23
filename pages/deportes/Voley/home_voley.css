@@ -10,7 +10,7 @@ header {
     color: #fff; /* Color del texto en el encabezado */
     padding: 5px; /* Espaciado interior del encabezado */
     display: flex; /* Usa flexbox para alinear elementos horizontalmente */
-    justify-content: space-between; /* Distribuye elementos horizontalmente */
+    justify-content: center; /* Distribuye elementos horizontalmente */
     align-items: center; /* Centra elementos verticalmente */
     text-align: center;
 }
@@ -19,6 +19,13 @@ h1{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400px;
     font-size: 30px;
+}
+.titulo{
+    margin-left: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 body{
