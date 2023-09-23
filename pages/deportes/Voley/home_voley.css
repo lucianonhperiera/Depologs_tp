@@ -28,6 +28,13 @@ h1{
     align-items: center;
 }
 
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 body{
     background-image: url(./imagenes/fondo\ voley.jpg.jfif);
     background-size: cover;
