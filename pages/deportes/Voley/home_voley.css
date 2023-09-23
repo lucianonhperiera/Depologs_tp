@@ -15,24 +15,14 @@ header {
     text-align: center;
 }
 
-h1{
+.titulo{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400px;
     font-size: 30px;
-}
-.titulo{
-    margin-left: 200px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-.titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 body{
@@ -44,7 +34,7 @@ body{
     padding: 0;
 }
 
-.logo_header > img{
+.logo_voley > img{
     height: 80px;
     width: 80px;
     border-radius: 30px;
