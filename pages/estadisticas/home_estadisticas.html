@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--estilos de css-->
+    <link rel="stylesheet" href="home_estadisticas.css">
+    <!--llamados de js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depologs Biblioteca</title>
+    <style>
+        body 
+        {
+            background: #3ca0df; /* Fallback color for old browsers */
+            background: -webkit-linear-gradient(to right, #2596ca, #13415e); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #134964, #0e4058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style>
+</head>
+<body>
+    <div class="botonera">
+        <button class="animated-button" onclick="window.location.href = '../home_pages.html'">
+            <span>ATRAS</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href = '../deportes/home_deportes.html'">
+            <span>DEPORTES</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href = '../biblioteca_videos/home_videos.html'">
+            <span>BIBLIOTECA</span>
+            <span></span>
+        </button>
+    </div>
+    
+    <div class="estadisticas">
+        <div id="estadisticas"></div>
+        <canvas id="grafico-de-barras" width="400" height="200"></canvas>
+    </div>
+    
+    <div class="texto-cambiante">
+        <div class="cardcambiante">
+            <a class="card1" href="#">
+             <p id="textoCambiante">Texto 1</p>
+             <div class="go-corner" href="#">
+               <div class="go-arrow">
+                 
+               </div>
+             </div>
+           </a>
+         </div>
+        
+    </div>
+    
+    <script src="home_estadisticas.js"></script>
+
+    <script>
+        // Array de textos que quieres mostrar
+        const textos = ["ESTA NO ES UNA PAGINA DE APUESTAS, PERO APOSTAMOS POR TU INTERES", "ESTADISTICAMENTE HABLANDO ESTAS EN EL LUGAR CORRECTO",
+        "ESTAMOS 90% SEGUROS DE QUE NOS ELEGIS SIEMPRE Y UN 10% LO SABEMOS", "LOS ESTADISTICAS ME DICTAN QUE ESTAS HACIENDO LAS COSAS BIEN"];
+        let currentIndex = 0;
+
+        // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
+        function cambiarTexto() {
+            currentIndex = (currentIndex + 1) % textos.length;
+            const elementoTexto = document.getElementById("textoCambiante");
+            elementoTexto.textContent = textos[currentIndex];
+        }
+
+        // Cambiar el texto inicial
+        cambiarTexto();
+
+        // Establecer un intervalo para cambiar el texto cada 30 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+</body>
+</html>
