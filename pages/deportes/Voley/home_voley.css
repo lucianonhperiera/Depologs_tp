@@ -15,16 +15,6 @@ header {
     text-align: center;
 }
 
-.titulo{
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400px;
-    font-size: 30px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
 body{
     background-image: url(./imagenes/fondo\ voley.jpg.jfif);
     background-size: cover;
@@ -38,27 +28,4 @@ body{
     height: 80px;
     width: 80px;
     border-radius: 30px;
-}
-
-nav ul{
-    list-style-type: none;
-    background-color: #382775;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    float: left;
-}
-
-nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
 }
