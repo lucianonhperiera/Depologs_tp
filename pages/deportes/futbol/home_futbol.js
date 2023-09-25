@@ -26,3 +26,4 @@ updateSlide(); // Mostrar la primera imagen
 setInterval(() => {
     changeSlide(1); // Cambiar a la siguiente imagen cada cierto tiempo (por ejemplo, cada 3 segundos)
 }, 2000);
+
