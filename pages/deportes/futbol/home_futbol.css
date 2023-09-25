@@ -7,13 +7,15 @@
  }
 
  body{
-    background-color: #3ca0df;
+  background-image: url('./images/home_fondo_messi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
  }
 h1{
   font-size: 50px;
 }
-
 
  /*estilos de los botones */
 .botonera{
