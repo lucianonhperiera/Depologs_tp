@@ -204,6 +204,7 @@ section {
   margin-top: 200px;
 }
 
+
 #premier {
   display: flex;
   justify-content: space-between;
@@ -235,13 +236,20 @@ h2 {
   flex: 1;
 }
 
+.tabla-posiciones>h2 {
+  color: #fff;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+  background-color: #00eeff8b;
 }
 
 th, td {
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   padding: 8px;
   text-align: left;
 }
@@ -251,11 +259,17 @@ th {
 }
 
 .noticia img {
-  width: 40%;
-  height: auto;
+  width: 50%;
 }
 
 td img {
   max-width: 30px;
   height: auto;
+}
+
+#bundesliga {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
 }
