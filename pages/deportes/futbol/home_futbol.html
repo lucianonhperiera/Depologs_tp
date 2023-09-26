@@ -8,25 +8,44 @@
     <link rel="icon" type="imagen/png" href="./images/home_favicon.png"/>
 </head>
 <body>
-    <img class="logo" src="./images/logo.PNG">
-    <div class="botonera">
-        <button class="animated-button" onclick="window.location.href = '../../home_pages.html'">
-            <span>INICIO</span>
-            <span></span>
-        </button>
-        <button class="animated-button" onclick="window.location.href = '../home_deportes.html'">
-            <span>ESTADISTICAS</span>
-            <span></span>
-        </button>
-        <button class="animated-button" onclick="window.location.href='../../biblioteca_videos/home_videos.html'">
-            <span>VIDEOTECA</span>
-            <span></span>
-        </button>
-        <button class="animated-button" onclick="window.location.href='../../estadisticas/home_estadisticas.html'">
-            <span>+ DEPORTES</span>
-            <span></span>
-        </button>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="./images/logo.PNG" alt="Logo"></a>
+            </div>
+            <div class="enlaces">
+                <button class="animated-button" onclick="window.location.href = '../../home_pages.html'">
+                    <a href="./home_futbol.html">INICIO</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = '../home_deportes.html'">
+                    <a href="#">ESTADISTICAS</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = '../home_deportes.html'">
+                    <a href="#">VIDEOTECA</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = '../home_deportes.html'">
+                    <a href="#">+ DEPORTES</a>
+                </button>
+            </div>
+            <div class="ingreso">
+                <button class="animated-button" onclick="window.location.href = '../home_deportes.html'">
+                <a href="/Depologs_tp/login/login.html">LOGIN</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = '../home_deportes.html'">
+                <a href="#">REGISTRO</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="ligas">
+        <p>LAS COMPETENCIAS DE FUTBOL MAS IMPORTANTES DEL</p>
+          <ul>
+            <li>MUNDO</li>
+            <li>PLANETA</li>
+            <li>UNIVERSO</li>
+          </ul>
+  </div>
 
     <div class="carousel-container">
         <button id="prevBtn" class="carousel-button" onclick="changeSlide(-1)"><</button>
@@ -38,14 +57,7 @@
         <button id="nextBtn" class="carousel-button" onclick="changeSlide(1)">></button>
     </div>
 
-    <div class="ligas">
-        <p>LAS COMPETENCIAS DE FUTBOL MAS IMPORTANTES DEL</p>
-          <ul>
-            <li>MUNDO</li>
-            <li>PLANETA</li>
-            <li>UNIVERSO</li>
-          </ul>
-  </div>
+
 
   <div class="principal-1">
     <a href="./eliminatorias_sudamericanas/eliminatorias_sudamericanas.html"><img src="./images/escudos_ligas/CONMEBOL/conmebol.png" alt="eliminatorias_sudamericanas"></a>

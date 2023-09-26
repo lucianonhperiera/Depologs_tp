@@ -13,23 +13,55 @@
   background-attachment: fixed;
  }
 
- .logo {
-  height: 100px;
-  width: 230px;
-  display: flex;
-  justify-content: center;
- }
-
- /*estilos de los botones */
-.botonera{
-    text-align: center; /* Centra horizontalmente los elementos dentro del contenedor */
-    padding-top: 20px; /* Espacio superior para separar de la parte superior de la página */
+  /* Estilo para el encabezado y la barra de navegación */
+  header {
+    background-color: #252424d0; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto en color blanco */
+    text-align: center; /* Centrar el contenido del encabezado */
+    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
 }
+
+/* Estilo para la barra de navegación */
+nav {
+    display: flex; /* Mostrar elementos en una línea */
+    justify-content: space-between; /* Distribuir los elementos de izquierda a derecha */
+    align-items: center; /* Centrar verticalmente los elementos */
+    max-width: auto; /* Ancho máximo de la barra de navegación */
+    margin: 0 auto; /* Centrar la barra de navegación en la página */
+    padding: 0 20px; /* Espacio interno en los lados izquierdo y derecho */
+}
+
+/* Estilo para el logotipo */
+.logo img {
+    width: 150px; /* Tamaño del logotipo */
+    height: 50px;
+}
+
+/* Estilo para los enlaces de navegación */
+.enlaces a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: #fff; /* Texto en color blanco */
+    margin: 0 15px; /* Espacio entre los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 30px;
+}
+
+/* Estilo para los enlaces de ingreso (Login y Registro) */
+.ingreso a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: #fff; /* Texto en color blanco */
+    margin-left:auto; /* Espacio entre los enlaces de ingreso */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px;
+}
+
+ /*estilos de los botones del nav */
+
 .animated-button {
     position: relative;
     display: inline-block;
-    margin: 8px;
-    padding: 12px 24px;
+    margin: 5px;
+    padding: 12px 15px;
     border: none;
     text-shadow: 2px 2px 3px black;
     font-size: 30px;
@@ -43,38 +75,12 @@
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
-  .animated-button span:last-child {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background-color: #00eeff;
-    border-radius: 50%;
-    opacity: 0;
-    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .animated-button span:first-child {
-    position: relative;
-    z-index: 1;
-  }
-  
   .animated-button:hover {
-    box-shadow: 0 0 0 5px #2195f360;
+    box-shadow: 0 0 0 10px #2195f360;
     color: #ffffff;
   }
-  
-  .animated-button:active {
-    scale: 0.95;
-  }
-  
-  .animated-button:hover span:last-child {
-    width: 170px;
-    height: 150px;
-    opacity: 1;
-  }
+ 
+
 
   /* carrousel resultados*/
 
@@ -123,18 +129,14 @@
 	
     display: flex;
     justify-content: center;
-    width:800px;
     height: 40px;
     color: #fff;
     font-size: 40px;
     line-height: 40px;
     text-shadow: 5px 5px 5px black;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     left: 380px;
-    margin-top: 230px;
+    margin-top: 50px;
     margin-left: 200px;
     overflow: hidden;
   }
@@ -170,7 +172,7 @@
 .principal-1 {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 100px;
 
 }
 
@@ -220,16 +222,15 @@ h2 {
   margin: 0;
   font-size: 40px;
 }
+
 .noticias {
   flex: 1;
   padding-right: 20px;
-}
-
-.noticia {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
 }
+
 
 .grande {
   background-color: #00eeff8b;
