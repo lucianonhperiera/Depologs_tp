@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header {
@@ -37,3 +39,7 @@ header {
     justify-content: center;
     text-align: center;
 }*/
+
+.noticias{
+    display: flex;
+}
