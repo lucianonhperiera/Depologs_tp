@@ -6,34 +6,34 @@
 }
 
 header {
-    background-color: #382775; /* Color de fondo del encabezado */
-    color: #fff; /* Color del texto en el encabezado */
-    padding: 5px; /* Espaciado interior del encabezado */
-    display: flex; /* Usa flexbox para alinear elementos horizontalmente */
-    justify-content: center; /* Distribuye elementos horizontalmente */
-    align-items: center; /* Centra elementos verticalmente */
-    text-align: center;
+    /*background-color: #382775; /* Color de fondo del encabezado */
+    /*color: #fff; /* Color del texto en el encabezado */
+    /*padding: 5px; /* Espaciado interior del encabezado */
+    /*display: flex; /* Usa flexbox para alinear elementos horizontalmente */
+    /*justify-content: center; /* Distribuye elementos horizontalmente */
+    /*align-items: center; /* Centra elementos verticalmente */
+    /*text-align: center;*/
 }
 
-body{
+/*body{
     background-image: url(./imagenes/fondo\ voley.jpg.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-}
+}*/
 
-.logo_voley > img{
+/*.logo_voley > img{
     height: 80px;
     width: 80px;
     border-radius: 30px;
-}
+}*/
 
-.encabezado{
+/*.encabezado{
     background-color: gray;
     color: #382775;
     display: flex;
     justify-content: center;
     text-align: center;
-}
+}*/
