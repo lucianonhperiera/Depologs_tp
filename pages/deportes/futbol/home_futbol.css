@@ -232,7 +232,7 @@ h2 {
 }
 
 .grande {
-  background-color: #f2f2f2;
+  background-color: #00eeff8b;
 }
 
 
@@ -253,13 +253,13 @@ table {
 }
 
 th, td {
-  border: 1px solid #000000;
+  border: 1px solid rgb(0, 0, 0);
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #000000;
 }
 
 .noticia img {
@@ -276,4 +276,43 @@ td img {
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+}
+
+
+
+
+/* Estilo para el footer */
+footer {
+  background-color: #333; /* Fondo oscuro para el footer */
+  color: #fff; /* Texto en color blanco */
+  padding: 20px; /* Espacio interno alrededor del contenido del footer */
+  text-align: center; /* Centrar el contenido del footer */
+}
+
+/* Estilo para los iconos de redes sociales */
+.redes-sociales a {
+  margin: 0 10px; /* Espacio entre los iconos */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+/* Estilo para los iconos específicos de cada red social */
+.icono-facebook img {
+  width: 40px;
+  height: 40px;
+}
+
+.icono-twitter img {
+  width: 40px;
+  height: 40px;
+}
+
+.icono-instagram img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilo para la marca de derechos reservados */
+.derechos-reservados p {
+  margin-top: 20px; /* Espacio superior */
+  font-size: 20px; /* Tamaño de fuente más pequeño para los derechos reservados */
 }
