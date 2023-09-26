@@ -29,9 +29,11 @@ body{
     width: 80px;
     border-radius: 30px;
 }
+
 .encabezado{
     background-color: gray;
     color: #382775;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
