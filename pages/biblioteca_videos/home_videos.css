@@ -51,7 +51,52 @@
     height: 150px;
     opacity: 1;
   }
+
   /*estilos de los carruzeles de videos y fotos*/
+  .carucel{
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Ancho fijo del contenedor, ajusta según tus necesidades */
+    height: 200px; /* Alto fijo del contenedor, ajusta según tus necesidades */
+    overflow: hidden;
+  }
+
+  .carousel {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+  }
+
+  .carousel img {
+      width: 30%; /* Ancho del 20% para mostrar 5 imágenes al mismo tiempo */
+      height: 100%;
+      object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen para llenar el espacio */
+      cursor: pointer;
+      position: absolute;
+      transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+  }
+
+  .centered {
+      width: 30%; /* Ancho ligeramente mayor para la imagen central */
+      z-index: 1;
+      transform: scale(1.2); /* Agranda ligeramente la imagen central */
+  }
+
+  .left-image {
+      left: 0;
+  }
+
+  .right-image {
+      right: 0;
+  }
 
 
   /* estilos de las frases que cambian*/
