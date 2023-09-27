@@ -84,18 +84,24 @@ body{
     padding: 0;
 }
 
-/*.logo_voley > img{
-    height: 80px;
-    width: 80px;
-    border-radius: 30px;
-}*/
-
-/*.encabezado{
-    background-color: gray;
-    color: #382775;
+.potencias_mundiales{
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content:center
+}
+
+table{
+    border: solid red;
+    background-color: bisque;
+}
+
+td img{
+    width: 15px;
+    height: 15px;
+}
+
+/*.potencia_masculina{
+    margin-left: auto;
+    margin-right: auto;
 }*/
 
 .noticias{
