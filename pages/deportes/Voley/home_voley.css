@@ -75,14 +75,14 @@ nav{
 }
 
 
-body{
+/*body{
     background-image: url(./imagenes/fondo\ voley.jpg.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-}
+}*/
 
 .potencias_mundiales{
     display: flex;
