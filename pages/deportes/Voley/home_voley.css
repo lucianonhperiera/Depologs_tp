@@ -7,15 +7,14 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 
-header {
-    /*background-color: #382775; /* Color de fondo del encabezado */
-    /*color: #fff; /* Color del texto en el encabezado */
-    /*padding: 5px; /* Espaciado interior del encabezado */
-    /*display: flex; /* Usa flexbox para alinear elementos horizontalmente */
-    /*justify-content: center; /* Distribuye elementos horizontalmente */
-    /*align-items: center; /* Centra elementos verticalmente */
-    /*text-align: center;*/
-} 
+body{
+    background-image: url(./imagenes/fondo\ voley.jpg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
 
 header{
     background-color: #1d1c20da;
@@ -74,36 +73,45 @@ nav{
 
 }
 
+h2{
+    color: #fff;
+    font-size: 48px;
+}
 
-/*body{
-    background-image: url(./imagenes/fondo\ voley.jpg.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-}*/
-
-.potencias_mundiales{
+.clasificacion{
     display: flex;
-    justify-content:center
+    width: 100%;
 }
 
-table{
-    border: solid red;
-    background-color: bisque;
+.tabla {
+    width: 50%;
+    border-collapse: collapse;
+    margin-right: 10px; 
+  }
+
+  td img{
+    height: auto;
+    max-width: 25px;
 }
 
-td img{
-    width: 15px;
-    height: 15px;
-}
 
-/*.potencia_masculina{
-    margin-left: auto;
-    margin-right: auto;
-}*/
+.tabla th, .tabla td {
+    border: 1px solid #406380;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+  }
+
+  
+  .tabla th {
+    background-color: #683838fb;
+  }
+  
+  .tabla tr{
+    background-color: #212c6bab;
+  }
 
 .noticias{
     display: flex;
+    height: 15px;
 }
