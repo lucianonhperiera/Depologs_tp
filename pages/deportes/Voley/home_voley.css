@@ -18,10 +18,11 @@ header {
 } 
 
 header{
-    background-color: #321e78ab;
+    background-color: #1d1c20da;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 0px 0;
+    margin: 0px;
 }
 
 nav{
@@ -35,22 +36,22 @@ nav{
 
 .logo_voley > img{
     width: 80px;
-    height: 80px;
+    height: 50px;
     border-radius: 30px;
 }
 
 .botonera a{
     text-decoration: none;
-    color: azure;
+    color: #fff;
     margin: 0 15px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .logo_titulo > img{
     margin-left: auto;
     width: 200px;
-    height: 80px;
+    height: 65px;
     border-radius: 20px;
 }
 
@@ -65,22 +66,23 @@ nav{
     background-color: inherit;
     border-radius: 100px;
     font-weight: 600;
-    color: aquamarine;
+    color: rgb(253, 253, 253);
     box-shadow: 0 0 0 #0051ffff;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-    
+
 }
 
-/*body{
+
+body{
     background-image: url(./imagenes/fondo\ voley.jpg.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-}*/
+}
 
 /*.logo_voley > img{
     height: 80px;
