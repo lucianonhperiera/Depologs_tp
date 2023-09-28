@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -66,19 +67,80 @@ nav{
     border-radius: 100px;
     font-weight: 600;
     color: rgb(253, 253, 253);
-    box-shadow: 0 0 0 #0051ffff;
+    box-shadow: 0 0 1rem rgba(52, 110, 233, 0.815);
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-
 }
 
-h2{
+.boton_animado:hover{
+    transform: scale(1.1);
+}
+
+.estadisticas_nations_league{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.estadisticas{
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.estadistica_back{
+    position: absolute;
+    top:1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.estadistica_back img{
+    opacity: 0.9;
+}
+.jugador{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.jugador img{
+    width: 100%;
+    max-width: 17rem;
+    border-radius: 20px;
+}
+
+.titulo_info{
+    font-size: 35px;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jugador_info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
+
+.divisiones{
     color: #fff;
     font-size: 48px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.clasificacion{
+.tabla_potencias{
     display: flex;
     width: 100%;
 }
@@ -111,6 +173,32 @@ h2{
   .tabla tr{
     background-color: #212c6bab;
   }
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo_nations_league{
+    flex: 0.0   30%;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo_nations_league img{
+    height: 230px;
+    width: 350px;
+    border-radius: 30px;
+}
+
+.info_nations_league{
+    flex: 1;
+    margin: 0 20px;
+    font-size: 32px;
+    color: #FFF;
+}
 
 .noticias{
     display: flex;
