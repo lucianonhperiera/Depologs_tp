@@ -82,6 +82,49 @@ nav {
  
 
 
+<<<<<<< HEAD
+=======
+  /* carrousel resultados*/
+
+  .carousel-container {
+    max-width: 3000px;
+    margin-bottom: 30px;
+    margin-top: 150px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-slide img {
+    width: auto;
+    max-height: 250px;
+    object-fit:cover;
+    transition: transform 0.6s ease;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 5px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #prevBtn {
+    left: 0;
+  }
+  
+  #nextBtn {
+    right: 0;
+  }
+>>>>>>> 753139ec6756275273f3569b909643e3d7d3c388
 
   /* animacion de ligas*/
 
@@ -95,9 +138,8 @@ nav {
     line-height: 40px;
     text-shadow: 5px 5px 5px black;
     position: absolute;
-    left: 380px;
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 250px;
     overflow: hidden;
   }
   
