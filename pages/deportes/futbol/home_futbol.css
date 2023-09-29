@@ -82,46 +82,6 @@ nav {
  
 
 
-  /* carrousel resultados*/
-
-  .carousel-container {
-    max-width: 3000px;
-    margin-bottom: 30px;
-    margin-top: 150px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .carousel-slide {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .carousel-slide img {
-    width: 100%;
-    max-height: 50px;
-    object-fit:cover;
-    transition: transform 0.6s ease;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 5px 5px;
-    border: none;
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #prevBtn {
-    left: 0;
-  }
-  
-  #nextBtn {
-    right: 0;
-  }
 
   /* animacion de ligas*/
 
@@ -172,7 +132,7 @@ nav {
 .principal-1 {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 200px;
 
 }
 
@@ -251,6 +211,7 @@ table {
   color: #fff;
   text-shadow: 5px 5px 5px black;
   background-color: #00eeff8b;
+  font-size: 40px;
 }
 
 th, td {
