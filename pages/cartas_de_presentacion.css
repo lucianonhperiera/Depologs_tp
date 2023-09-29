@@ -1,8 +1,10 @@
 .cartaspresentacion{
     text-align: center; 
     padding-top: 20px;
-    margin-top: 20px;  
+    margin-top: 20px; 
+    display: inline-block;
 }
+/*estilos de las cartas de presentacion*/
 .card {
     position: relative;
     display: inline-block;
@@ -17,7 +19,54 @@
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   }
-  
+  /*desde este punto solo se agregan las fotos*/
+  .f1 {
+    background-image: url('formula-1-logo-0.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+  .valorant{
+    background-image: url('2560px-Valorant_logo_-_pink_color_version.svg.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+
+  .futbol{
+    background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+  .handball{
+    background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+  .tenis{
+    background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+  .voley{
+    background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+  .strike{
+    background-image: url('creadores-csgo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+  .baseball{
+    background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+  .badminton{
+    background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Posición de la imagen en el centro */
+  }
+  /*hasta acá solo se modifican las fotos*/
   .content {
     display: flex;
     flex-direction: column;
@@ -82,7 +131,7 @@
   .content .btn:active {
     box-shadow: none;
   }
-  
+  /*estos son los estilos de la carte de los mensajes cambiantes*/
   .cardcambiante {
     font-size: 17px;
     font-weight: 400;
