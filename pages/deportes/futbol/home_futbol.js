@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 let currentIndex = 0;
 const slides = document.querySelectorAll('.carousel-slide img');
 const totalSlides = slides.length;
@@ -29,4 +27,3 @@ setInterval(() => {
     changeSlide(1); // Cambiar a la siguiente imagen cada cierto tiempo (por ejemplo, cada 3 segundos)
 }, 3000);
 
->>>>>>> 753139ec6756275273f3569b909643e3d7d3c388
