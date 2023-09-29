@@ -1,162 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--llamado a los estilos-->
     <link rel="stylesheet" href="home_pages.css">
     <link rel="stylesheet" href="botones.css">
     <link rel="stylesheet" href="cartas_de_presentacion.css">
+    <link rel="stylesheet" href="carta f1.css">
     <link rel="stylesheet" href="menu.css">
+    <!--llamado a los scripts-->
+    <!--coasitas del mismo html no tocar-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>depologs secciones</title>
+    <!--estilos de la pagina-->
     <style>
         body 
         {
             background: #3ca0df; /* Fallback color for old browsers */
-            background: -webkit-linear-gradient(to right, #2596ca, #13415e); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #134964, #0e4058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: -webkit-linear-gradient(to right, #248cbd, #0e3750); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #134964, #3595c2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
     </style>
 </head>
 <body>
+    <!--botones de la parte superior-->
     <div class="botonera">
-        <button class="animated-button">
-            <span>deportes</span>
+        <!--botones con estilo-->
+        <button class="animated-button" onclick="window.location.href='deportes/home_deportes.html'">
+            <span>DEPORTES</span>
             <span></span>
         </button>
-        <button class="animated-button">
-            <span>biblioteca</span>
+        <button class="animated-button" onclick="window.location.href='biblioteca_videos/home_videos.html'">
+            <span>BIBLIOTECA</span>
             <span></span>
         </button>
-        <button class="animated-button">
-            <span>estadisticas</span>
+        <button class="animated-button" onclick="window.location.href='estadisticas/home_estadisticas.html'">
+            <span>ESTADISTICAS</span>
             <span></span>
         </button>
     </div>
+    <!--cartas de presentacion de los deportes-->
     <div class="cartaspresentacion">
+        <!--estas son las cartas que de ven separadas-->
         <div class="card">
-            <div>
+            <!--este divi sirve para poner una imagen de fondo-->
+            <div class="futbol">
                 <div class="content">
                     <p class="heading">
                         FUTBOL
                     </p>
                     <p class="para">
-                        es el fulbo 
+                        El fútbol, futbol​ o balompié​ es un deporte de equipo jugado entre dos conjuntos de once jugadores cada uno, 
+                        mientras los árbitros se ocupan de que las normas se cumplan correctamente. 
+                        Es, ampliamente, considerado el deporte más popular del mundo, pues lo practican unas 270 millones de personas. 
                     </p>
-                    <button class="btn">Read more</button>
+                    <button class="btn">llevame a futbol</button>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div>
+            <div class="handball">
                 <div class="content">
                 <p class="heading">
-                    BALON MANO
+                    HANDBALL
                 </p>
                 <p class="para">
-                    esto es balon mano
+                    El balonmano, hándbol o handball, 
+                    es un deporte de pelota en el que se enfrentan dos equipos y se caracteriza por transportar la pelota con las manos.
                 </p>
-                <button class="btn">Read more</button>
+                <button class="btn">llevame a handball</button>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div>
+            <div class="badminton">
                 <div class="content">
                 <p class="heading">
-                    BATMINGTON
+                    BADMINTON
                 </p>
                 <p class="para">
-                    esto es basket ball
+                    El bádminton es un deporte de raqueta en el que se enfrentan dos jugadores o dos parejas situadas en las mitades opuestas de una pista rectangular dividida por una red.
+                     A diferencia de otros deportes de raqueta en el bádminton no se juega con pelota, sino con un volante.
                 </p>
-                <button class="btn">Read more</button>
+                <button class="btn">llevame a badminton</button>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="fotos">
+            <div class="baseball">
                 <div class="content">
                 <p class="heading">
                     BASEBALL
                 </p>
                 <p class="para">
-                    nuestros deportes 
+                    El béisbol​, también llamado baseball o juego de pelota es un deporte de equipo jugado por dos equipos de nueve jugadores cada uno. 
                 </p>
-                <button class="btn">Read more</button>
+                <button class="btn">llevame a baseball</button>
                 </div>
             </div>
         </div>
             <div class="card">
-                <div class="fotos">
+                <div class="tenis">
                     <div class="content">
                     <p class="heading">
                         TENIS
                     </p>
                     <p class="para">
-                        nuestros deportes 
+                        Deporte que se practica entre dos jugadores o dos parejas en una pista rectangular dividida transversalmente por una red;
+                         consiste en impulsar una pelota con una raqueta por encima de la red intentando que bote en el campo contrario y que el adversario no la pueda devolver;
+                         los partidos se disputan a tres o cinco sets siguiendo un complejo sistema de puntuación. 
                     </p>
-                    <button class="btn">Read more</button>
+                    <button class="btn">llevame a tenis</button>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="fotos">
+            <div class="voley">
                 <div class="content">
                 <p class="heading">
                     VOLEY
                 </p>
                 <p class="para">
-                    nuestros deportes 
+                    El voleibol, vóleibol, volibol, vólibol, balonvolea o simplemente vóley ​ es un deporte que se juega con una pelota y en el que dos equipos, 
+                    integrados por seis jugadores cada uno, 
+                    se enfrentan sobre una área de juego separada por una red central. 
                 </p>
-                <button class="btn">Read more</button>
+                <button class="btn">llevame a voley</button>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div>
+            <div class="strike">
                 <div class="content">
                     <p class="heading">
-                        ESPORT COUNTER STRIKE
+                        E-SPORT COUNTER STRIKE
                     </p>
                     <p class="para">
-                        es el fulbo 
+                        Counter-Strike es una serie de videojuegos tácticos multijugador de disparos en primera persona en los que equipos de terroristas luchan 
+                        para perpetrar un acto de terror mientras que los contraterroristas intentan prevenirlo. La serie comenzó en Windows en 1999 con el lanzamiento del primer juego, 
+                        Counter-Strike. 
                     </p>
-                    <button class="btn">Read more</button>
+                    <button class="btn">llevame a counter strike</button>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="fotos">
+            <div class="f1">
                 <div class="content">
                 <p class="heading">
                     F1
                 </p>
                 <p class="para">
-                    nuestros deportes 
+                    El Campeonato Mundial de Fórmula 1 de la FIA, más conocido como Fórmula 1, F1 o Fórmula Uno, 
+                    es la principal competición de automovilismo internacional y el campeonato de deportes de motor más popular y prestigioso del mundo. 
+                    La entidad que la dirige es la Federación Internacional del Automóvil.
                 </p>
-                <button class="btn">Read more</button>
+                <button class="btn" onclick="window.location.href = 'deportes/f1/home_f1.html'">llevame a f1</button>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div>
+            <div class="valorant">
                 <div class="content">
                     <p class="heading">
-                        ESPORT VALORANT
+                        E-SPORT VALORANT
                     </p>
                     <p class="para">
-                        es el fulbo 
+                        Valorant es un hero shooter en primera persona multijugador gratuito desarrollado y publicado por Riot Games. 
+                        El juego se anunció por primera vez con el nombre en clave Project A en octubre de 2019. 
+                        Fue lanzado para Microsoft Windows el 2 de junio de 2020 después de su beta cerrada lanzada el 7 de abril de 2020.
                     </p>
-                    <button class="btn">Read more</button>
+                    <button class="btn">llevame a valorant</button>
                 </div>
             </div>
         </div>
     </div>
-    
+    <!--texto que cambia cada 10 segundos-->
     <div class="texto-cambiante">
         <div class="cardcambiante">
             <a class="card1" href="#">
              <p id="textoCambiante">Texto 1</p>
              <div class="go-corner" href="#">
+                <!--este div sirve para poder poner algún caracter en la parte superior del estilo-->
                <div class="go-arrow">
                  
                </div>
@@ -184,6 +209,8 @@
 
         // Establecer un intervalo para cambiar el texto cada 10 segundos
         setInterval(cambiarTexto, 10000);
+
     </script>
+
 </body>
 </html>
