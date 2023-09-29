@@ -205,6 +205,19 @@ nav{
     font-size: 17px;
 }
 
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    top: 0;
+    left: 100%;
+    margin-left: 10px;
+}
+
 .divisiones{
     color: #fff;
     font-size: 48px;
