@@ -1,10 +1,10 @@
 // JavaScript para mostrar y ocultar el tooltip
-function showTooltip(element) {
-    var tooltip = element.nextElementSibling;
+function showTooltip() {
+    var tooltip = document.querySelector('.tooltip');
     tooltip.style.display = "block";
 }
 
-function hideTooltip(element) {
-    var tooltip = element.nextElementSibling;
+function hideTooltip() {
+    var tooltip = document.querySelector('.tooltip');
     tooltip.style.display = "none";
 }

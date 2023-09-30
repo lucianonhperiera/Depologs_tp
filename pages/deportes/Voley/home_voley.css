@@ -208,8 +208,8 @@ nav{
 .tooltip {
     display: none;
     position: absolute;
-    background-color: aqua;
-    color: #FFF;
+    background-color: #333;
+    color: #fff;
     padding: 5px;
     border-radius: 5px;
     z-index: 1;
