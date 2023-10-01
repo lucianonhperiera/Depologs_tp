@@ -18,7 +18,7 @@
 }
 
 body{
-    background-image: url(./imagenes/fondo\ voley.jpg.jfif);
+    background-image: url(./imagenes/fondo/fondo_prueba.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -112,9 +112,9 @@ nav{
     color: #fff;
   }
 
-  
+
   .tabla th {
-    background-color: #174291;
+    background-color: #ff9100d7;
     font-size: 18px;
   }
   
