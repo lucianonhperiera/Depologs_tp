@@ -82,47 +82,6 @@ nav {
  
 
 
-  /* carrousel resultados*/
-
-  .carousel-container {
-    max-width: 3000px;
-    margin-bottom: 30px;
-    margin-top: 150px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .carousel-slide {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .carousel-slide img {
-    width: auto;
-    max-height: 250px;
-    object-fit:cover;
-    transition: transform 0.6s ease;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 5px 5px;
-    border: none;
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #prevBtn {
-    left: 0;
-  }
-  
-  #nextBtn {
-    right: 0;
-  }
-
   /* animacion de ligas*/
 
   .ligas {
@@ -131,12 +90,9 @@ nav {
     justify-content: center;
     height: 40px;
     color: #fff;
-    font-size: 40px;
     line-height: 40px;
     text-shadow: 5px 5px 5px black;
-    position: absolute;
     margin-top: 50px;
-    margin-left: 250px;
     overflow: hidden;
   }
   
@@ -168,16 +124,23 @@ nav {
     100% {margin-top: 0;}
   }
 
+
+
+
+
+  /* LIGAS*/
+
+
 .principal-1 {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 80px;
 
 }
 
 .principal-1 img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background-color:rgba(112, 128, 144, 0.113);
   border-radius: 80px;
 }
@@ -194,8 +157,8 @@ nav {
   }
   
   .principal-2 img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-color:rgba(112, 128, 144, 0.13);
     border-radius: 80px;
   }
@@ -278,6 +241,50 @@ td img {
   align-items: flex-start;
   padding: 20px;
 }
+
+
+
+  /* carrousel noticias*/
+
+  .carousel-container {
+    max-width: auto;
+    margin-bottom: 30px;
+    margin-top: 150px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-slide img {
+    width: auto;
+    max-height: 250px;
+    object-fit:cover;
+    transition: transform 0.6s ease;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 5px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #prevBtn {
+    left: 0;
+  }
+  
+  #nextBtn {
+    right: 0;
+  }
+
 
 
 
