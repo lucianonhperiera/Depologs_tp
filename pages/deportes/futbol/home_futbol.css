@@ -172,6 +172,13 @@ section {
   margin-top: 200px;
 }
 
+.texto-noticias {
+  font-size: 60px;
+  color:#fff;
+  margin-top: 20px;
+  text-shadow: 2px 2px 3px black;
+}
+
 
 #premier {
   display: flex;
