@@ -86,7 +86,13 @@ nav{
     transform: scale(1.1);
 }
 
-
+.divisiones{
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 .tabla_potencias{
     display: flex;
@@ -203,12 +209,6 @@ nav{
     text-align: center;
     color: #fff;
     font-size: 17px;
-}
-
-.divisiones{
-    color: #fff;
-    font-size: 48px;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .campeonato_mundial_mas {
