@@ -13,6 +13,23 @@
             background: -webkit-linear-gradient(to right, #2596ca, #13415e); /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #134964, #0e4058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
+        .foto-video-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas iguales */
+            grid-gap: 20px; /* Agrega espacio entre las dos columnas */
+        }
+
+        .foto {
+            max-width: 100%; /* Asegura que la imagen se ajuste al ancho de la columna */
+        }
+
+        .video {
+            max-width: 100%; /* Asegura que el video se ajuste al ancho de la columna */
+        }
+
+        .info {
+            margin-top: 20px; /* Agrega espacio entre la foto/video y la información debajo */
+        }
     </style>
 </head>
 <body>
@@ -30,21 +47,42 @@
             <span></span>
         </button>
     </div>
-   
-    <div class="deportes">
-        <div class="apostar">
-            <div class="foto">
-                <img src="./f1/pilotos/alfa romeo.jpg" height="300px" width="550px">
+    
+    <div class="fondo">
+        <div class="deportes">
+            <div class="apostar">
+                <div class="foto">
+                    <img src="./f1/pilotos/alfa romeo.jpg" width="640" height="360">
+                </div>
                 <div class="video">
-                    <source src="" type="video/mp4">
-                    <div class="info">
-                        <p>kjhgkjhgjhgg</p>
-                    </div>
+                    <video width="640" height="360" controls>
+                        <source src="Top 10 Most Dramatic Moments Of The 2022 F1 Season!.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
+        <div class="info">
+            <p>kjhgkjhgjhgg</p>
+        </div>
     </div>
-
+    <div class="fondo">
+        <div class="deportes">
+            <div class="apostar">
+                <div class="foto">
+                    <img src="./f1/pilotos/alfa romeo.jpg" width="640" height="360">
+                </div>
+                <div class="video">
+                    <video width="640" height="360" controls>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <p>kjhgkjhgjhgg</p>
+        </div>
+    </div>
+    
     <div class="texto-cambiante">
         <div class="cardcambiante">
             <a class="card1" href="#">

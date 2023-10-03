@@ -252,11 +252,19 @@
 /*seccion para los estilos de los deportes para apostar*/
   .deportes{
     margin-top: 40px;
+    justify-content: center;
+    display: flex;
   }
   .apostar{
-    display: inline-block;
     margin: 20px;
+    display: flex;
+    justify-content: center;
   }
+  .info{
+    justify-content: center;
+    display: flex;
+  }
+  
 /* centra el texto que cambia */
   .texto-cambiante{   
     display: flex;
