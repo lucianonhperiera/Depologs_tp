@@ -1,0 +1,32 @@
+.tablapuntos{
+    margin-top: 40px;
+    color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bebas Neue;
+}
+.tablapuntos table {
+    width: 80%; /* Cambia el porcentaje según el tamaño deseado */
+    border: 2px solid #000; /* Cambia el grosor y color de los bordes */
+    border-collapse: collapse; /* Para que los bordes colapsen y se vean más uniformes */
+}
+
+.tablapuntos th, .tablapuntos td {
+    padding: 10px; /* Espacio interno entre el contenido y los bordes */
+    text-align: center; /* Centra el contenido en las celdas */
+    font-weight: bold; /* Cambia el grosor de la fuente */
+    color: #080808; /* Cambia el color del texto en las celdas */
+}
+
+.tablapuntos th {
+    background-color: #050505; /* Cambia el color de fondo del encabezado */
+    color: #fae9e9; /* Cambia el color del texto en el encabezado */
+}
+
+.tablapuntos tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Cambia el color de fondo de filas impares */
+}
+.tablapuntos tr:nth-child(even) {
+    background-color: #5aa2e6; /* Cambia el color de fondo de filas pares */
+}
