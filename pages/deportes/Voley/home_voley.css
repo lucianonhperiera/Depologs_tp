@@ -122,6 +122,7 @@ nav{
   .tabla th {
     background-color: #dc8600;
     font-size: 18px;
+    color: black;
   }
   
   .tabla tr{
@@ -214,4 +215,25 @@ nav{
 .campeonato_mundial_mas {
     display: flex;
     justify-content: center;
+}
+
+.medallero {
+    display: flex;
+    justify-content: center;
+}
+
+/* Galeria */
+
+.contenedor_fotos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
 }
