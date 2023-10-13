@@ -47,7 +47,7 @@
     background-position: center; /* Posición de la imagen en el centro */
   }
   .voley{
-    background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
+    background-image: url('./deportes/Voley/imagenes/fondo/icono_voley_home.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
     background-position: center; /* Posición de la imagen en el centro */
   }
