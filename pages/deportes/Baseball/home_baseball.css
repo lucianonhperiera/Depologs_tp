@@ -62,7 +62,8 @@
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   }
   .heading{
-    color: black;
+    color: rgb(248, 244, 244);
+    font-size: 20px;
   }
   /*en esta seccion nosotros agregamos las clases de imagenes de los equipos que queremos agregar a cada tarjeta de presentacion*/
   .angelesangeles{
