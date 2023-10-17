@@ -169,41 +169,47 @@ nav {
 
   /* SECCIONES*/
 
+  h2{
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 10px 10px 10px black;
+    margin-top: 40px;
+  }
+
 section {
   margin-top: 200px;
 }
 
-#premier,#bundesliga,#laLiga,#serieA {
+#premier,#bundesliga,#laLiga,#serieA,#MLS {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px;
+  padding: 10px;
+  margin: 150px;
 }
 
 .texto-noticias {
   font-size: 60px;
   color:#fff;
   margin-top: 20px;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 15px 15px 15px #00000083;
 }
 
-
-h2 {
-  margin: 0;
-  font-size: 40px;
-}
 
 .noticias {
   flex: 1;
-  padding-right: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 20px;
+}
+
+.noticias h3 {
+  font-size: 50px;
 }
 
 
 .grande {
-  background-color: #00eeff8b;
+  background-color: #00eeff83;
 }
 
 
@@ -211,20 +217,21 @@ h2 {
   flex: 1;
 }
 
-.tabla-posiciones>h2 {
+.tabla-posiciones > h3 {
   color: #fff;
+  font-size: 50px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   color: #fff;
-  text-shadow: 5px 5px 5px black;
-  background-color: #00eeff8b;
+  text-shadow: 10px 10px 15px black;
+  background-color: #00eeff83;
   font-size: 40px;
 }
 
-th, td {
+th, td, tr {
   border: 1px solid rgb(0, 0, 0);
   padding: 8px;
   text-align: left;
@@ -232,6 +239,7 @@ th, td {
 
 th {
   background-color: #000000;
+  font-size: 30px;
 }
 
 .noticia img {
