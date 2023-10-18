@@ -203,8 +203,8 @@ section {
   margin: 20px;
 }
 
-.noticias h3 {
-  font-size: 50px;
+.noticias p, h3 {
+  font-size: 30px;
 }
 
 
@@ -228,7 +228,7 @@ table {
   color: #fff;
   text-shadow: 10px 10px 15px black;
   background-color: #00eeff83;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 th, td, tr {
@@ -249,6 +249,12 @@ th {
 td img {
   max-width: 30px;
   height: auto;
+}
+
+.goleadores, .asistencias{
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 10px 10px 15px black;
 }
 
   /* carrousel noticias*/

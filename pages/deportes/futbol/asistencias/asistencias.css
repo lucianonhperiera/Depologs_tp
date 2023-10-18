@@ -7,7 +7,7 @@
 }
 
 body{
- background-image: url('../images/fondo_champions.jpg');
+ background-image: url('../images/asistencias.png');
  background-size: cover;
  background-repeat: no-repeat;
  background-attachment: fixed;
@@ -80,34 +80,10 @@ nav {
    color: #ffffff;
  }
 
- h2{
-  font-size: 50px;
-  color: #fff;
-  
- }
 
- .table-container {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.table {
-  border-collapse: collapse;
-  width: 45%;
-  margin: 10px;
-  background-color: rgba(0, 81, 255, 0.592);
-  color: #fff;
-  font-size: 20px;
-} 
 
-.table, .table th, .table td {
-  border: 1px solid black;
-}
 
-.table th, .table td {
-  padding: 8px;
-  text-align: center;
-}
 
 
 
@@ -141,36 +117,36 @@ nav {
 
  /* Estilo para el footer */
 footer {
-    background-color: #333; /* Fondo oscuro para el footer */
-    color: #fff; /* Texto en color blanco */
-    padding: 20px; /* Espacio interno alrededor del contenido del footer */
-    text-align: center; /* Centrar el contenido del footer */
-  }
-  
-  /* Estilo para los iconos de redes sociales */
-  .redes-sociales a {
-    margin: 0 10px; /* Espacio entre los iconos */
-    text-decoration: none; /* Quitar subrayado de los enlaces */
-  }
-  
-  /* Estilo para los iconos específicos de cada red social */
-  .icono-facebook img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .icono-twitter img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .icono-instagram img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  /* Estilo para la marca de derechos reservados */
-  .derechos-reservados p {
-    margin-top: 20px; /* Espacio superior */
-    font-size: 20px; /* Tamaño de fuente más pequeño para los derechos reservados */
-  }
+  background-color: #333; /* Fondo oscuro para el footer */
+  color: #fff; /* Texto en color blanco */
+  padding: 20px; /* Espacio interno alrededor del contenido del footer */
+  text-align: center; /* Centrar el contenido del footer */
+}
+
+/* Estilo para los iconos de redes sociales */
+.redes-sociales a {
+  margin: 0 10px; /* Espacio entre los iconos */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+/* Estilo para los iconos específicos de cada red social */
+.icono-facebook img {
+  width: 40px;
+  height: 40px;
+}
+
+.icono-twitter img {
+  width: 40px;
+  height: 40px;
+}
+
+.icono-instagram img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilo para la marca de derechos reservados */
+.derechos-reservados p {
+  margin-top: 20px; /* Espacio superior */
+  font-size: 20px; /* Tamaño de fuente más pequeño para los derechos reservados */
+}
