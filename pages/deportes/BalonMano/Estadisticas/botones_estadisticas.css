@@ -90,3 +90,97 @@
     opacity: 0.5;
     z-index: -1;
   }
+       body {
+        font-family: Bebas Neue, sans-serif;
+    background-image: url(./Imagenes/png-clipart-handball-graphy-sports-handball-sports-shoe-fotor-bg-remover-20230919221718-transformed.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  } 
+  nav li {
+    display: inline-block;
+    margin: 0px;
+  }
+  h1 {
+    color: white;
+  text-shadow: 4px 4px 4px black;
+}
+h2 {
+  text-shadow: 2px 2px 2px white;
+}
+  .container {
+        text-align: center;
+      }
+  .container2 {
+    padding-top: 50px;
+        text-align: center;
+      }
+.container3 {
+    float: right;
+        text-align: center;
+      }
+.borde {
+    width: 1070px;
+        border: 5px solid black;
+        padding: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        margin-left: 200px;
+      }
+.caja_estadisticas {
+  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.844),rgba(128, 128, 128, 0.258));
+    width: 500px;
+    height: 480px;
+        border: 2.5px solid black;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: grid;
+  place-items: center;
+      }
+ .jugador {
+  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.844),rgba(128, 128, 128, 0.258));
+    width: 500px;
+    height: 480px;
+        border: 2.5px solid black;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+ .jugador img {
+    float: right;
+        width: 230px;
+        height: 230px;
+        object-fit: contain;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+.footer {
+  text-align:center;
+}
+.principal-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+}
+
+.principal-1 img {
+  width: 500px;
+  height: 300px;
+  background-color:rgba(112, 128, 144, 0.113);
+  border-radius: 80px;
+}
+
+.principal-1 img:hover {
+  filter: saturate(500%);
+}
