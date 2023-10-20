@@ -15,6 +15,32 @@
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             background-attachment: fixed;
         }
+        .videos {
+            display: flex;
+            align-items: center;
+        }
+        
+        .carousel {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card {
+            display: flex;
+            flex-wrap: nowrap;
+            transition: transform 0.5s ease;
+        }
+        
+        video {
+            width: 100%;
+        }
+        
+        .arrow {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -286,11 +312,11 @@
     </div>
 
     <div class="videos">
-        <div class="carousel">
-            <div class="card">
-                <video src="" controls="autoplay" width="100%"></video>
-            </div>
-        </div>
+                <video src="video1.mp4" controls="autoplay" width="100%"></video>
+                <video src="video2.mp4" controls="autoplay" width="100%"></video>
+                <video src="video3.mp4" controls="autoplay" width="100%"></video>
+        <div class="arrow" id="prev">←</div>
+        <div class="arrow" id="next">→</div>
     </div>
 
     <!--<div class="btnmas">
@@ -316,6 +342,35 @@
         
     </div>
     
+    <script>
+        const card = document.querySelector(".card");
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+        let videoIndex = 0;
+
+        const videos = card.querySelectorAll("video");
+
+        nextButton.addEventListener("click", () => {
+            if (videoIndex < videos.length - 1) {
+                videoIndex++;
+                updateCarousel();
+            }
+        });
+
+        prevButton.addEventListener("click", () => {
+            if (videoIndex > 0) {
+                videoIndex--;
+                updateCarousel();
+            }
+        });
+
+        function updateCarousel() {
+            const videoWidth = videos[0].offsetWidth;
+            const translateX = -videoIndex * videoWidth;
+            card.style.transform = `translateX(${translateX}px)`;
+        }
+    </script>
+
     <script src="../home_videos.js"></script>
 
     <script>
