@@ -2,6 +2,19 @@
   text-align: center;
   padding-top: 40px;
 }
+.Cabecera {
+  height: 196px;
+  text-align: center;
+  background-color: #00000088;
+  border-color: #00000088;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Logo > img {
+width: 200px;
+height: 190px;
+}
 
 .jugador .banderas {
   position: relative;
@@ -10,17 +23,18 @@
   width: 25px;
 }
 .animated-button {
-  margin-right: 15px;
+  margin-bottom: 40px;
+  margin-right: 50px;
   position: relative;
   display: inline-block;
   padding: 12px 96.2px;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;
-  color: #000000;
-  box-shadow: 0 0 0 2px #000000;
+  color:white;
+  box-shadow: 0 0 0 2px white;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
@@ -33,7 +47,7 @@
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: #e49b08;
+    background-color: black;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
@@ -68,15 +82,14 @@
   .photos {
     
     display: flex;
-    flex-direction: column; /* Display the images vertically */
-    align-items: center; /* Center the images horizontally */
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     padding: 20px;
   }
   
   .photos div {
     flex-basis: 45%;
-    /*background-color: #f26c1c;*/
     padding: 0px;
     border-radius: 5px;
   }
@@ -86,13 +99,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('png-clipart-handball-graphy-sports-handball-sports-shoe-fotor-bg-remover-20230919221718.png');
+    background-image: url('./Imagenes/fondo.png');
     opacity: 0.5;
     z-index: -1;
   }
        body {
         font-family: Bebas Neue, sans-serif;
-    background-image: url(./Imagenes/png-clipart-handball-graphy-sports-handball-sports-shoe-fotor-bg-remover-20230919221718-transformed.png);
+    background-image: url(./Imagenes/fondo.png);
     background-repeat: no-repeat;
     background-position: cover;
     background-size: cover;
@@ -117,7 +130,8 @@
   text-shadow: 4px 4px 4px black;
 }
 h2 {
-  text-shadow: 2px 2px 2px white;
+  color: white;
+  text-shadow: 4px 4px 4px black;
 }
   .container {
         text-align: center;
@@ -175,12 +189,13 @@ h2 {
 }
 
 .principal-1 img {
-  width: 600px;
+  margin-left: 20px;
+  width: 650px;
   height: 300px;
   background-color:rgba(112, 128, 144, 0.113);
-  border-radius: 80px;
+  border-radius: 20px;
 }
 
 .principal-1 img:hover {
-  filter: saturate(500%);
+  filter: saturate(200%);
 }

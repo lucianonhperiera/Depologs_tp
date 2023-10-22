@@ -1,25 +1,51 @@
+.container {
+padding-top: 10px;
+float: right;
+margin-right: 50px;
+  text-align: center;
+}
+.borde {
+  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.844),rgba(128, 128, 128, 0.258));
+        border: 5px solid black;
+        padding: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        margin-left: 200px;
+      }
 .botonera {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 80px;
-  }
-  
-  .animated-button {
-    margin-right: 15px;
-    position: relative;
-    display: inline-block;
-    padding: 12px 96.2px;
-    border: none;
-    font-size: 16px;
-    background-color: inherit;
-    border-radius: 100px;
-    font-weight: 600;
-    color: #000000;
-    box-shadow: 0 0 0 2px #000000;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
+  text-align: center;
+  padding-top: 40px;
+}
+.Cabecera {
+  height: 196px;
+  text-align: center;
+  background-color: #00000088;
+  border-color: #00000088;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Logo > img {
+width: 200px;
+height: 190px;
+}
+.animated-button {
+  margin-bottom: 40px;
+  margin-right: 50px;
+  position: relative;
+  display: inline-block;
+  padding: 12px 96.2px;
+  border: none;
+  font-size: 18px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color:white;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
   
   .animated-button span:last-child {
     position: absolute;
@@ -28,7 +54,7 @@
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: #ffa703;
+    background-color: black;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
@@ -61,19 +87,11 @@
     height: 50vh;
   }
   .photos {
-    
     display: flex;
-    flex-direction: column; /* Display the images vertically */
-    align-items: center; /* Center the images horizontally */
+    flex-direction: column;
+    align-items: center; 
     margin-top: 20px;
     padding: 20px;
-  }
-  
-  .photos div {
-    flex-basis: 45%;
-    /*background-color: #f26c1c;*/
-    padding: 0px;
-    border-radius: 5px;
   }
   #fondo-transparente {
     position: flex;
@@ -81,7 +99,30 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('png-clipart-handball-graphy-sports-handball-sports-shoe-fotor-bg-remover-20230919221718.png');
+    background-image: url('../Estadisticas/Imagenes/fondo.png');
     opacity: 0.5;
     z-index: -1;
   }
+body {
+        font-family: Bebas Neue, sans-serif;
+    background-image: url(../Estadisticas/Imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+h1 {
+    color: white;
+  text-shadow: 4px 4px 4px black;
+}
+h2 {
+  color: white;
+  text-shadow: 4px 4px 4px black;
+}
+h3 {
+  color: white;
+text-shadow: 4px 4px 4px black;
+}
+  .footer {
+    text-align:center;
+    }
