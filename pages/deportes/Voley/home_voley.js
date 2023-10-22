@@ -1,3 +1,4 @@
+//Galeria de fotos
 const imagenes = document.querySelectorAll(".img-galeria");
 const imagenesLight = document.querySelector(".agregar_imagen");
 const contenedorLight = document.querySelector(".imagen_light");
@@ -20,6 +21,8 @@ const aparecerImagen = (imagen) =>{
     contenedorLight.classList.toggle("show")
     imagenesLight.classList.toggle("showImage")
 }
+
+//Botón para ir hacia arriba
 
 let lastScrollPosition = window.scrollY; // Variable para rastrear la posición de desplazamiento anterior
 
