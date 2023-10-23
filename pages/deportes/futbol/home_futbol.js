@@ -1,44 +1,19 @@
-//CARROUSELL DE NOVEDADES
-let slideIndex = 1;
-showSlides(slideIndex);
+//CARROUSEL DE LIBROS
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+const carousel = document.querySelector(".carousel");
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+carousel.addEventListener("scroll", () => {
+    // Lógica para mostrar solo un libro a la vez en el carrusel.
+    const scrollLeft = carousel.scrollLeft;
+    const bookWidth = 320; // Ancho de cada libro incluyendo márgenes
+    const bookIndex = Math.floor((scrollLeft + bookWidth / 2) / bookWidth);
 
-function showSlides(n) {
-    let i;
-    const slides = document.getElementsByClassName("slide");
-    const dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
-// Cambiar las imágenes automáticamente cada 5 segundos
-setInterval(() => {
-    plusSlides(1);
-}, 5000);
+    // Lógica para resaltar el libro activo.
+    const books = document.querySelectorAll(".book");
+    books.forEach((book, index) => {
+        book.classList.toggle("active", bookIndex === index);
+    });
+});
 
 
 
