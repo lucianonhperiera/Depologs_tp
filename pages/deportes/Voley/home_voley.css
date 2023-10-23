@@ -211,6 +211,13 @@ nav{
     font-family: 'fontJosefin Sans', sans-serif;
 }
 
+.titulo_info2{
+    font-size: 30px;
+    padding: 0;
+    font-family: 'fontJosefin Sans', sans-serif;
+    text-shadow: 10px 10px 10px #D4AF37;
+}
+
 .jugador_info{
     display: flex;
     flex-direction: column;
