@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="home_pages.css">
+    <link rel="stylesheet" href="botones.css">
+    <link rel="stylesheet" href="cartas_de_presentacion.css">
+    <link rel="stylesheet" href="menu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>depologs secciones</title>
+=======
     <!--llamado a los estilos-->
     <link rel="stylesheet" href="home_pages.css">
     <link rel="stylesheet" href="botones.css">
@@ -13,16 +22,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>depologs secciones</title>
     <!--estilos de la pagina-->
+>>>>>>> depologs_main
     <style>
         body 
         {
             background: #3ca0df; /* Fallback color for old browsers */
+<<<<<<< HEAD
+            background: -webkit-linear-gradient(to right, #2596ca, #13415e); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #134964, #0e4058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+=======
             background: -webkit-linear-gradient(to right, #248cbd, #0e3750); /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #134964, #3595c2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+>>>>>>> depologs_main
         }
     </style>
 </head>
 <body>
+<<<<<<< HEAD
+    <div>
+        <button class="btn">
+            <span class="icon">
+                <svg viewBox="0 0 175 80" width="40" height="40">
+                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                </svg>
+            </span>
+            <span class="text">MENU</span>
+        </button>
+    </div>
+    <div class="botonera">
+        <button class="animated-button">
+            <span>deportes</span>
+            <span></span>
+        </button>
+        <button class="animated-button">
+            <span>biblioteca</span>
+            <span></span>
+        </button>
+        <button class="animated-button">
+            <span>estadisticas</span>
+            <span></span>
+        </button>
+    </div>
+    <div class="cartaspresentacion">
+        <div class="card">
+            <div class="content">
+            <p class="heading">
+                deportes
+            </p>
+            <p class="para">
+                nuestros deportes 
+            </p>
+            <button class="btn">Read more</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+            <p class="heading">
+                biblioteca
+            </p>
+            <p class="para">
+                biblioteca de videos y fotos
+            </p>
+            <button class="btn">Read more</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+            <p class="heading">estadisticas
+            </p>
+            <p class="para">
+                estadisticas de los deportes
+            </p>
+            <button class="btn">Read more</button>
+            </div>
+        </div>
+    </div>
+=======
     <!--botones de la parte superior-->
     <div class="botonera">
         <!--botones con estilo-->
@@ -176,12 +253,16 @@
         </div>
     </div>
     <!--texto que cambia cada 10 segundos-->
+>>>>>>> depologs_main
     <div class="texto-cambiante">
         <div class="cardcambiante">
             <a class="card1" href="#">
              <p id="textoCambiante">Texto 1</p>
              <div class="go-corner" href="#">
+<<<<<<< HEAD
+=======
                 <!--este div sirve para poder poner algún caracter en la parte superior del estilo-->
+>>>>>>> depologs_main
                <div class="go-arrow">
                  
                </div>
@@ -190,6 +271,15 @@
          </div>
         
     </div>
+<<<<<<< HEAD
+
+    <script>
+        // Array de textos que quieres mostrar
+        const textos = ["tus papas son primos", "los perros pueden ladrar pero no maullar", "esternocleidomastoideo", "tus perros tienen 4 patas"];
+        let currentIndex = 0;
+
+        // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
+=======
     
     <script>
         // Array de textos que quieres mostrar
@@ -198,6 +288,7 @@
         let currentIndex = 0;
 
         // Función para cambiar el texto cada 10 segundos (10000 milisegundos)
+>>>>>>> depologs_main
         function cambiarTexto() {
             currentIndex = (currentIndex + 1) % textos.length;
             const elementoTexto = document.getElementById("textoCambiante");
@@ -207,10 +298,16 @@
         // Cambiar el texto inicial
         cambiarTexto();
 
+<<<<<<< HEAD
+        // Establecer un intervalo para cambiar el texto cada 30 segundos
+        setInterval(cambiarTexto, 30000);
+    </script>
+=======
         // Establecer un intervalo para cambiar el texto cada 10 segundos
         setInterval(cambiarTexto, 10000);
 
     </script>
 
+>>>>>>> depologs_main
 </body>
 </html>

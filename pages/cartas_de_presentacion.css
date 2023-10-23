@@ -1,10 +1,15 @@
 .cartaspresentacion{
     text-align: center; 
     padding-top: 20px;
+<<<<<<< HEAD
+    margin-top: 20px;  
+}
+=======
     margin-top: 20px; 
     display: inline-block;
 }
 /*estilos de las cartas de presentacion*/
+>>>>>>> depologs_main
 .card {
     position: relative;
     display: inline-block;
@@ -19,6 +24,9 @@
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   }
+<<<<<<< HEAD
+  
+=======
   /*desde este punto solo se agregan las fotos*/
   .f1 {
     background-image: url('formula-1-logo-0.png'); /* Ruta de la imagen de fondo */
@@ -67,6 +75,7 @@
     background-position: center; /* Posición de la imagen en el centro */
   }
   /*hasta acá solo se modifican las fotos*/
+>>>>>>> depologs_main
   .content {
     display: flex;
     flex-direction: column;
@@ -131,7 +140,11 @@
   .content .btn:active {
     box-shadow: none;
   }
+<<<<<<< HEAD
+  
+=======
   /*estos son los estilos de la carte de los mensajes cambiantes*/
+>>>>>>> depologs_main
   .cardcambiante {
     font-size: 17px;
     font-weight: 400;
