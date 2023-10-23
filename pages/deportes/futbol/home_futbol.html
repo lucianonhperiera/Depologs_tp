@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="./home_futbol.html"><img src="./images/logo.PNG" alt="Logo"></a>
+                <a href="./home_futbol.html"><img src="./images/logo.jpeg" alt="Logo"></a>
             </div>
             <div class="enlaces">
                 <button class="animated-button" onclick="window.location.href = '../../home_pages.html'">ATRAS</a>
@@ -320,21 +320,44 @@
             </section>
 
                 <h2 class="texto-noticias"> NOTICIAS AL INSTANTE</h2>
-                <div class="carousel-container">
-                    <button id="prevBtn" class="carousel-button" onclick="changeSlide(-1)"><</button>
-                    <div class="carousel-slide">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier2.png" alt="Resultado 1">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier3.png" alt="Resultado 2">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier4.png" alt="Resultado 3">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier5.png" alt="Resultado 4">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier6.png" alt="Resultado 5">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier7.jpg" alt="Resultado 6">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier8.jpg" alt="Resultado 7">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier9.jpg" alt="Resultado 8">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier10.jpg" alt="Resultado 9">
-                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier11.jpg" alt="Resultado 10">
+                <div id="carousel-container">
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier2.png" alt="Imagen 1">
                     </div>
-                    <button id="nextBtn" class="carousel-button" onclick="changeSlide(1)">></button>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier3.png" alt="Imagen 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier4.png" alt="Imagen 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier5.png" alt="Imagen 4">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier6.png" alt="Imagen 5">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier7.jpg" alt="Imagen 6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier8.jpg" alt="Imagen 7">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier9.jpg" alt="Imagen 8">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier10.jpg" alt="Imagen 9">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier11.jpg" alt="Imagen 10">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
 
                 <hr>
@@ -559,23 +582,46 @@
                     </div>
             </section>
             <h2 class="texto-noticias"> NOTICIAS AL INSTANTE</h2>
-            <div class="carousel-container">
-                <button id="prevBtn" class="carousel-button" onclick="changeSlide(-1)"><</button>
-                <div class="carousel-slide">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga1.jpg" alt="Resultado 1">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga2.jpg" alt="Resultado 2">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga3.jpg" alt="Resultado 3">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga4.jpg" alt="Resultado 4">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga5.jpg" alt="Resultado 5">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga6.jpg" alt="Resultado 6">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga7.jpg" alt="Resultado 7">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga8.jpg" alt="Resultado 8">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga9.jpg" alt="Resultado 9">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga10.jpg" alt="Resultado 10">
-                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga11.jpg" alt="Resultado 11">
-                </div>
-                <button id="nextBtn" class="carousel-button" onclick="changeSlide(1)">></button>
-            </div>
+                    <div id="carousel-container">
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga1.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga2.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga3.jpg" alt="Imagen 3">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga4.jpg" alt="Imagen 4">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga5.jpg" alt="Imagen 5">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga6.jpg" alt="Imagen 6">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga7.jpg" alt="Imagen 7">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga8.jpg" alt="Imagen 8">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga9.jpg" alt="Imagen 9">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga10.jpg" alt="Imagen 10">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
 
             <hr>
 
@@ -818,14 +864,44 @@
                     </div>
             </section>
             <h2 class="texto-noticias"> NOTICIAS AL INSTANTE</h2>
-            <div class="carousel-container">
-                <button id="prevBtn" class="carousel-button" onclick="changeSlide(-1)"><</button>
-                <div class="carousel-slide">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier2.png" alt="Resultado 1">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier3.png" alt="Resultado 2">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier4.png" alt="Resultado 3">
+            <div id="carousel-container">
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga1.jpg" alt="Imagen 1">
                 </div>
-                <button id="nextBtn" class="carousel-button" onclick="changeSlide(1)">></button>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga2.jpg" alt="Imagen 2">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga3.jpg" alt="Imagen 3">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga4.jpg" alt="Imagen 4">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga5.jpg" alt="Imagen 5">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga6.jpg" alt="Imagen 6">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga7.jpg" alt="Imagen 7">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga8.jpg" alt="Imagen 8">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga9.jpg" alt="Imagen 9">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga10.jpg" alt="Imagen 10">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
             <hr>
@@ -1072,14 +1148,44 @@
                     </div>
             </section>
             <h2 class="texto-noticias"> NOTICIAS AL INSTANTE</h2>
-            <div class="carousel-container">
-                <button id="prevBtn" class="carousel-button" onclick="changeSlide(-1)"><</button>
-                <div class="carousel-slide">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier2.png" alt="Resultado 1">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier3.png" alt="Resultado 2">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier4.png" alt="Resultado 3">
+            <div id="carousel-container">
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga1.jpg" alt="Imagen 1">
                 </div>
-                <button id="nextBtn" class="carousel-button" onclick="changeSlide(1)">></button>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga2.jpg" alt="Imagen 2">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga3.jpg" alt="Imagen 3">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga4.jpg" alt="Imagen 4">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga5.jpg" alt="Imagen 5">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga6.jpg" alt="Imagen 6">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga7.jpg" alt="Imagen 7">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga8.jpg" alt="Imagen 8">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga9.jpg" alt="Imagen 9">
+                </div>
+                <div class="slide fade">
+                    <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga10.jpg" alt="Imagen 10">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
             <hr>
@@ -1440,15 +1546,45 @@
                     </div>
             </section>
             <h3 class="texto-noticias"> NOTICIAS AL INSTANTE</h2>
-            <div class="carousel-container">
-                <button id="prevBtn" class="carousel-button" onclick="changeSlide(-1)"><</button>
-                <div class="carousel-slide">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier2.png" alt="Resultado 1">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier3.png" alt="Resultado 2">
-                    <img src="images/escudos_ligas/PREMIERLEAGUE/fotos/premier4.png" alt="Resultado 3">
+                <div id="carousel-container">
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga1.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga3.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga4.jpg" alt="Imagen 4">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga5.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga6.jpg" alt="Imagen 6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga7.jpg" alt="Imagen 7">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga8.jpg" alt="Imagen 8">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga9.jpg" alt="Imagen 9">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/escudos_ligas/BUNDESLIGA/fotos/bundesliga10.jpg" alt="Imagen 10">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <button id="nextBtn" class="carousel-button" onclick="changeSlide(1)">></button>
-            </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
 
             <hr>
 
