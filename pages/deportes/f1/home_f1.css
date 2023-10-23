@@ -1,58 +1,77 @@
 
 /*estilos de los botones */
-.botonera{
-    text-align: center; /* Centra horizontalmente los elementos dentro del contenedor */
-    padding-top: 20px; /* Espacio superior para separar de la parte superior de la página */
+.Cabecera {
+  text-align: center;
+  background-color: #00000088;
+  border-color: #00000088;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.Logo {
+  width: 10%;
+  height: 15%;
+}
+
+.botonera {
+  width: 60%; /* Define el ancho deseado, puedes ajustar este valor según tus necesidades */
+  height: 50px; /* Define la altura deseada, puedes ajustar este valor según tus necesidades */
+  text-align: center; /*Centra horizontalmente los elementos dentro del contenedor */
+  padding-top: 20px; /* Espacio superior para separar de la parte superior de la página */
+  align-items: center;
+  display: flex;
+}
+
 .animated-button {
-    margin-left: 5px;
-    position: relative;
-    display: inline-block;
-    padding: 12px 24px;
-    border: none;
-    font-size: 16px;
-    background-color: inherit;
-    border-radius: 100px;
-    font-weight: 600;
-    color: #f5ebeb;
-    box-shadow: 0 0 0 2px #e21e1ea8;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .animated-button span:last-child {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background-color: #e21e1ef8;
-    border-radius: 50%;
-    opacity: 0;
-    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .animated-button span:first-child {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .animated-button:hover {
-    box-shadow: 0 0 0 5px #f11a1ad7;
-    color: #ffffff;
-  }
-  
-  .animated-button:active {
-    scale: 0.95;
-  }
-  
-  .animated-button:hover span:last-child {
-    width: 150px;
-    height: 150px;
-    opacity: 1;
-  }
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #ffffff40;
+  box-shadow: 0 0 0 2px #ffffff20;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  margin-right: 15px;
+}
+
+.animated-button span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #00eeff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 5px #2195f360;
+  color: #ffffff;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
   /* estilos de las frases que cambian*/
   .cardcambiante {
     margin-bottom: 20px;
