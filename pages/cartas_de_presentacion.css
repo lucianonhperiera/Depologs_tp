@@ -32,9 +32,9 @@
   }
 
   .futbol{
-    background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
-    background-position: center; /* Posición de la imagen en el centro */
+    background-image: url('./deportes/futbol/images/home_favicon.png'); /* Ruta de la imagen de fondo */
+    background-size:350px; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: cover; /* Posición de la imagen en el centro */
   }
   .handball{
     background-image: url('valorant-logo-FAB2CA0E55-seeklogo.com.png'); /* Ruta de la imagen de fondo */
