@@ -2,6 +2,7 @@
 
 // Función para mostrar u ocultar el botón según la posición de desplazamiento
 function toggleScrollButton() {
+    console.log("Scrolling...");
     const scrollButton = document.querySelector(".volver");
     if (window.scrollY > 200) {
         scrollButton.style.opacity = 1;
