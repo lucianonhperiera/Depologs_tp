@@ -18,6 +18,10 @@
 <body>
     <div class="botonera">
         <button class="animated-button">
+            <span>inicio</span>
+            <span></span>
+        </button>
+        <button class="animated-button">
             <span>deportes</span>
             <span></span>
         </button>
@@ -30,13 +34,108 @@
             <span></span>
         </button>
     </div>
-   
-    <div class="quienes">
-        <p style="font-family: Bebas Neue, sans-serif;">Nosotros somos depologs, un proyecto creado con la tarea de informar 
-            y dar las mejores soluciones en el mundo de las apuestas deportivas con nuestro amplio catalogo de deportes y estadisticas deportivas 
-            para que puedas tomar la mejor dicision al momento de hacer tus apuestas online, tambien contamos con un amplio catalogo de fotos y videos en nuesta biblioteca
-            multimedia con tus deportes favoritos, 
-        </p>
+   <!--
+    <div class="informacion">
+        <a class="fancy">
+            <span class="top-key"></span>
+            <span class="text">Nosotros somos depologs, un proyecto creado con la tarea de informar 
+                y dar las mejores soluciones en el mundo de las apuestas deportivas con nuestro amplio catalogo de deportes y estadisticas deportivas 
+                para que puedas tomar la mejor dicision al momento de hacer tus apuestas online, tambien contamos con un amplio catalogo de fotos y videos en nuesta biblioteca
+                multimedia con tus deportes favoritos,</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </a>
+    </div>
+    -->
+
+    <div class="carousel-container">
+        <div class="carousel" id="deportivas">
+            <h2>Noticias Deportivas</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/noticias/instituto.png" alt="Noticia 1"></div>
+                <div><img src="./asets/noticias/lanus.png" alt="Noticia 2"></div>
+                <div><img src="./asets/noticias/newells.png" alt="Noticia 3"></div>
+            </div>
+        </div>
+
+        <div class="carousel" id="fechas">
+            <h2>Fechas y Horarios de Deportes</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/fechas_horarios/argentinos.png" alt="Noticia 2"></div>
+                <div><img src="./asets/fechas_horarios/arsenal.png" alt="Noticia 1"></div>
+                <div><img src="./asets/fechas_horarios/atleticotucuman.png" alt="Noticia 3"></div>
+            </div>
+        </div>
+
+        <div class="carousel" id="publicidades">
+            <h2>Publicidades</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/boca.png" alt="Noticia 2"></div>
+                <div><img src="./asets/centralcordoba.png" alt="Noticia 1"></div>
+                <div><img src="./asets/colon.png" alt="Noticia 3"></div>
+
+            </div>
+        </div>
+    </div>
+-->
+    <div class="carousel-container">
+        <div class="carousel" id="deportivas">
+            <h2>Noticias Deportivas</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/noticias/instituto.png" alt="Noticia 1"></div>
+                <div><img src="./asets/noticias/lanus.png" alt="Noticia 2"></div>
+                <div><img src="./asets/noticias/newells.png" alt="Noticia 3"></div>
+            </div>
+        </div>
+
+        <div class="carousel" id="fechas">
+            <h2>Fechas y Horarios de Deportes</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/fechas_horarios/argentinos.png" alt="Noticia 2"></div>
+                <div><img src="./asets/fechas_horarios/arsenal.png" alt="Noticia 1"></div>
+                <div><img src="./asets/fechas_horarios/atleticotucuman.png" alt="Noticia 3"></div>
+            </div>
+        </div>
+
+        <div class="carousel" id="publicidades">
+            <h2>Publicidades</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/boca.png" alt="Noticia 2"></div>
+                <div><img src="./asets/centralcordoba.png" alt="Noticia 1"></div>
+                <div><img src="./asets/colon.png" alt="Noticia 3"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel" id="deportivas">
+            <h2>Noticias Deportivas</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/noticias/instituto.png" alt="Noticia 1"></div>
+                <div><img src="./asets/noticias/lanus.png" alt="Noticia 2"></div>
+                <div><img src="./asets/noticias/newells.png" alt="Noticia 3"></div>
+            </div>
+        </div>
+
+        <div class="carousel" id="fechas">
+            <h2>Fechas y Horarios de Deportes</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/fechas_horarios/argentinos.png" alt="Noticia 2"></div>
+                <div><img src="./asets/fechas_horarios/arsenal.png" alt="Noticia 1"></div>
+                <div><img src="./asets/fechas_horarios/atleticotucuman.png" alt="Noticia 3"></div>
+            </div>
+        </div>
+
+        <div class="carousel" id="publicidades">
+            <h2>Publicidades</h2>
+            <div class="carousel-inner">
+                <div><img src="./asets/boca.png" alt="Noticia 2"></div>
+                <div><img src="./asets/centralcordoba.png" alt="Noticia 1"></div>
+                <div><img src="./asets/colon.png" alt="Noticia 3"></div>
+
+            </div>
+        </div>
     </div>
     
     <div class="texto-cambiante">
@@ -49,8 +148,7 @@
                </div>
              </div>
            </a>
-         </div>
-        
+         </div>  
     </div>
 
     
@@ -71,8 +169,9 @@
         // Cambiar el texto inicial
         cambiarTexto();
 
-        // Establecer un intervalo para cambiar el texto cada 30 segundos
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
         setInterval(cambiarTexto, 10000);
     </script>
+    <script src="carrousel.js"></script>
 </body>
 </html>

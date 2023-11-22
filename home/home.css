@@ -1,4 +1,16 @@
-  
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+   font-family: 'Bebas Neue', sans-serif;
+}
+
+p{
+  color: #ffffff;
+  font-size: 30px;
+}
 /*estilos de los botones */
 .botonera{
   text-align: center; /* Centra horizontalmente los elementos dentro del contenedor */
