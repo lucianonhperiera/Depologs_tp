@@ -49,52 +49,15 @@
     -->
 
     <div class="carousel-container">
-        <div class="carousel" id="deportivas">
+        
+        <div class="deportesnoticias" id="deportivas">
             <h2>Noticias Deportivas</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/noticias/instituto.png" alt="Noticia 1"></div>
-                <div><img src="./asets/noticias/lanus.png" alt="Noticia 2"></div>
-                <div><img src="./asets/noticias/newells.png" alt="Noticia 3"></div>
-            </div>
+            <div id="array1">Este es el texto original</div>
         </div>
 
-        <div class="carousel" id="fechas">
+        <div class="array2" id="fechas">
             <h2>Fechas y Horarios de Deportes</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/fechas_horarios/argentinos.png" alt="Noticia 2"></div>
-                <div><img src="./asets/fechas_horarios/arsenal.png" alt="Noticia 1"></div>
-                <div><img src="./asets/fechas_horarios/atleticotucuman.png" alt="Noticia 3"></div>
-            </div>
-        </div>
-
-        <div class="carousel" id="publicidades">
-            <h2>Publicidades</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/boca.png" alt="Noticia 2"></div>
-                <div><img src="./asets/centralcordoba.png" alt="Noticia 1"></div>
-                <div><img src="./asets/colon.png" alt="Noticia 3"></div>
-
-            </div>
-        </div>
-    </div>
--->
-    <div class="carousel-container">
-        <div class="carousel" id="deportivas">
-            <h2>Noticias Deportivas</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/noticias/instituto.png" alt="Noticia 1"></div>
-                <div><img src="./asets/noticias/lanus.png" alt="Noticia 2"></div>
-                <div><img src="./asets/noticias/newells.png" alt="Noticia 3"></div>
-            </div>
-        </div>
-
-        <div class="carousel" id="fechas">
-            <h2>Fechas y Horarios de Deportes</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/fechas_horarios/argentinos.png" alt="Noticia 2"></div>
-                <div><img src="./asets/fechas_horarios/arsenal.png" alt="Noticia 1"></div>
-                <div><img src="./asets/fechas_horarios/atleticotucuman.png" alt="Noticia 3"></div>
-            </div>
+            <div id="array2">Este es el texto original</div>
         </div>
 
         <div class="carousel" id="publicidades">
@@ -108,65 +71,6 @@
         </div>
     </div>
 
-    <div class="carousel-container">
-        <div class="carousel" id="deportivas">
-            <h2>Noticias Deportivas</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/noticias/instituto.png" alt="Noticia 1"></div>
-                <div><img src="./asets/noticias/lanus.png" alt="Noticia 2"></div>
-                <div><img src="./asets/noticias/newells.png" alt="Noticia 3"></div>
-            </div>
-        </div>
-
-        <div class="carousel" id="fechas">
-            <h2>Fechas y Horarios de Deportes</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/fechas_horarios/argentinos.png" alt="Noticia 2"></div>
-                <div><img src="./asets/fechas_horarios/arsenal.png" alt="Noticia 1"></div>
-                <div><img src="./asets/fechas_horarios/atleticotucuman.png" alt="Noticia 3"></div>
-            </div>
-        </div>
-
-        <div class="carousel" id="publicidades">
-            <h2>Publicidades</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/boca.png" alt="Noticia 2"></div>
-                <div><img src="./asets/centralcordoba.png" alt="Noticia 1"></div>
-                <div><img src="./asets/colon.png" alt="Noticia 3"></div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="carousel-container">
-        <div class="carousel" id="deportivas">
-            <h2>Noticias Deportivas</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/noticias/instituto.png" alt="Noticia 1"></div>
-                <div><img src="./asets/noticias/lanus.png" alt="Noticia 2"></div>
-                <div><img src="./asets/noticias/newells.png" alt="Noticia 3"></div>
-            </div>
-        </div>
-
-        <div class="carousel" id="fechas">
-            <h2>Fechas y Horarios de Deportes</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/fechas_horarios/argentinos.png" alt="Noticia 2"></div>
-                <div><img src="./asets/fechas_horarios/arsenal.png" alt="Noticia 1"></div>
-                <div><img src="./asets/fechas_horarios/atleticotucuman.png" alt="Noticia 3"></div>
-            </div>
-        </div>
-
-        <div class="carousel" id="publicidades">
-            <h2>Publicidades</h2>
-            <div class="carousel-inner">
-                <div><img src="./asets/boca.png" alt="Noticia 2"></div>
-                <div><img src="./asets/centralcordoba.png" alt="Noticia 1"></div>
-                <div><img src="./asets/colon.png" alt="Noticia 3"></div>
-
-            </div>
-        </div>
-    </div>
     
     <div class="texto-cambiante">
         <div class="cardcambiante">
@@ -202,6 +106,47 @@
         // Establecer un intervalo para cambiar el texto cada 10 segundos
         setInterval(cambiarTexto, 10000);
     </script>
+    <script>
+        // Array de titulares de noticias
+        const titulares = ["Título de la noticia 1", "Título de la noticia 2", "Título de la noticia 3"];
+      
+        // Función para cambiar el texto cada 10 segundos
+        function cambiarTexto() {
+          // Obtener el titular de la noticia
+          const titular = titulares[currentIndex];
+      
+          // Cambiar el texto del elemento
+          const elementoTexto = document.getElementById("array1");
+          elementoTexto.textContent = titular;
+        }
+      
+        // Cambiar el texto inicial
+        cambiarTexto();
+      
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
+        setInterval(cambiarTexto, 10000);
+      </script>
+      <script>
+        // Array de fechas importantes
+        const fechasImportantes = ["25 de diciembre: Navidad", "1 de enero: Año Nuevo", "2 de abril: Día de la Memoria"];
+      
+        // Función para cambiar el texto cada 10 segundos
+        function cambiarTexto() {
+          // Obtener la fecha importante
+          const fechaImportante = fechasImportantes[currentIndex];
+      
+          // Cambiar el texto del elemento
+          const elementoTexto = document.getElementById("array2");
+          elementoTexto.textContent = fechaImportante;
+        }
+      
+        // Cambiar el texto inicial
+        cambiarTexto();
+      
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
+        setInterval(cambiarTexto, 10000);
+      </script>
     <script src="carrousel.js"></script>
+    
 </body>
 </html>
