@@ -1,53 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
-   margin: 0px;
-   text-align: center;
-   font-family: 'Bebas Neue', sans-serif;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .header {
-  position: relative;
-  width: max-content;
+    position: absolute;
+    height: 100%;
+    width: 220px;
+    background-color: #134964;
+    border-radius: 2%;
 }
 
 .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  height: auto;
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    height: 150px;
+    width: 150px;
 }
-
+/*
 .content {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 80px;
+}
+*/
+.boton {
   background-color: black;
-  color: white;
-  padding: 80px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  color: #3595c2; 
+  border-radius: 15%;
 }
 
-button {
-  background-color: #4CAF50; /* Color verde, puedes cambiarlo según tus preferencias */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 40px;
-}
 
-  /* VIDEO DE FONDO*/
+/* VIDEO DE FONDO*/
 
-  .video {
-    position: fixed; 
-    right: 0; bottom: 0;
-    min-width: 100%; 
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
     min-height: 100%;
-    width: auto; 
-    height: auto; 
+    width: auto;
+    height: auto;
     z-index: -100;
     background-size: cover;
-    }
+}
 
-    span{
-        font-size: 18px;
-    }
+span {
+    font-size: 18px;
+}
