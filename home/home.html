@@ -48,18 +48,18 @@
     </div>
     -->
 
-    <div class="carousel-container">
-        
-        <div class="deportesnoticias" id="deportivas">
+    <div class="deportesnoticias" id="deportivas">
             <h2>Noticias Deportivas</h2>
             <div id="array1">Este es el texto original</div>
         </div>
 
-        <div class="array2" id="fechas">
+        <div class="fechas" id="fechas">
             <h2>Fechas y Horarios de Deportes</h2>
-            <div id="array2">Este es el texto original</div>
+            <div id="array2" class="info">Este es el texto original</div>
         </div>
 
+    <div class="carousel-container">
+        
         <div class="carousel" id="publicidades">
             <h2>Publicidades</h2>
             <div class="carousel-inner">
@@ -73,27 +73,21 @@
         </div>
     </div>
 
-    
+
     <div class="texto-cambiante">
-        <div class="cardcambiante">
-            <a class="card1" href="#">
-             <p id="textoCambiante">Texto 1</p>
-             <div class="go-corner" href="#">
-               <div class="go-arrow">
-                 
-               </div>
-             </div>
-           </a>
-         </div>  
+        <p id="textoCambiante" class="cambia">Texto 1</p>
     </div>
 
     
     
     <script>
         // Array de textos que quieres mostrar
-        const textos = ["EL FUTBOL SE JUEGA CON UNA PEROTA", "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO",
+        const textos = ["NOSOTROS SOMOS DEPOLOGS, UNA PAGINA DE DEPORTES ESTADISTICAS PARA LOS AFICIONADOS COMO VOS, UN GRAN AFICIONADO A ESTE GRAN MUNDO", "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO",
         "jsjhgdjhagdjhagdjhgd", "EL PAN ESTA SOBREVALORADO"];
         let currentIndex = 0;
+        // Array de titulares de noticias
+        const titulares = ["Qué pasa con Lionel Scaloni: el detrás de las dudas por su continuidad en la Selección Argentina", "Se conoció lo que le dijo Messi a Rodrygo en el tenso cruce que tuvieron en el clásico entre la Selección Argentina y Brasil", "El ídolo y actual secretario deportivo del Millonario habló sobre el Muñeco, aquellos rumores que lo vinculaban con la política del club y hasta la posibilidad de que vuelva como DT. Además, aseguró que no me dio felicidad que Boca haya perdido la Libertadores", "Título de la noticia 2", "Título de la noticia 3"];
+
 
         // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
         function cambiarTexto() {
@@ -101,7 +95,9 @@
             const elementoTexto = document.getElementById("textoCambiante");
             elementoTexto.textContent = textos[currentIndex];
         }
+        
 
+        
         // Cambiar el texto inicial
         cambiarTexto();
 
@@ -109,18 +105,9 @@
         setInterval(cambiarTexto, 10000);
     </script>
     <script>
-        // Array de titulares de noticias
-        const titulares = ["Título de la noticia 1", "Título de la noticia 2", "Título de la noticia 3"];
+        
       
-        // Función para cambiar el texto cada 10 segundos
-        function cambiarTexto() {
-          // Obtener el titular de la noticia
-          const titular = titulares[currentIndex];
-      
-          // Cambiar el texto del elemento
-          const elementoTexto = document.getElementById("array1");
-          elementoTexto.textContent = titular;
-        }
+        
       
         // Cambiar el texto inicial
         cambiarTexto();
