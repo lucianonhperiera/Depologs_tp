@@ -12,6 +12,7 @@
     justify-content: center;
     margin-top: 20px;
     margin: 10px;
+    height: 350px;
     width: 320px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 32px;
@@ -24,6 +25,7 @@
     background-image: url('formula-1-logo-0.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
     background-position: center; /* Posición de la imagen en el centro */
+    
   }
   .valorant{
     background-image: url('2560px-Valorant_logo_-_pink_color_version.svg.png'); /* Ruta de la imagen de fondo */
@@ -33,7 +35,7 @@
 
   .futbol{
     background-image: url('./deportes/futbol/images/home_favicon.png'); /* Ruta de la imagen de fondo */
-    background-size:350px; /* Escalar la imagen para cubrir todo el contenedor */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
     background-position: cover; /* Posición de la imagen en el centro */
   }
   .handball{
@@ -72,7 +74,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    color: #e8e8e8;
+    height: 350px;
+    color: rgb(0, 0, 0);
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -86,6 +89,7 @@
   }
   
   .content .btn {
+    margin-top: 110px;
     color: #e8e8e8;
     text-decoration: none;
     padding: 10px;

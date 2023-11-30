@@ -68,9 +68,11 @@ p{
 /* centra el texto que cambia */
 .texto-cambiante{   
   position: absolute;
-  top: 80%;
+  top: 450%;
   width: 100%;
+  margin-top: 200px;
 }
+
 
 /*noticias */
 
@@ -80,6 +82,7 @@ p{
   left: 10%;
   height: 350px;
   width: 200px;
+  margin-bottom: 30px;
 }
 
 /*fechas*/
@@ -90,6 +93,7 @@ p{
   left: 40%;
   height: 350px;
   width: 200px;
+  margin-bottom: 30px;
 }
 
 /*info de los eventos*/
@@ -97,7 +101,10 @@ p{
 .info{
   display: flex;
   margin-top: 20px;
+  color: #ffffff;
 }
+
+
 
 /* CARROUSEL*/
 
@@ -112,6 +119,7 @@ p{
   position: absolute;
   top: 10%;
   left: 60%;
+  margin-bottom: 30px;
 }
 
 
@@ -138,4 +146,24 @@ p{
 h2 {
   color: #ffffff;
   font-size: 40px;
+}
+
+/*body del home*/
+
+.nosotros{
+  margin-top: 20px;
+  position: absolute;
+  top: 90%;
+}
+
+span{
+  font-size: 18px;
+}
+
+.nos{
+  color: aliceblue;
+  background-color: rgba(255, 255, 0, 0.267);
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 50px;
 }
