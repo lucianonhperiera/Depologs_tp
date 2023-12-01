@@ -169,9 +169,10 @@ span{
 }
 
 .nos{
-  color: aliceblue;
-  background-color: rgba(0, 183, 255, 0.267);
+  color: rgb(255, 255, 255);
+  background-color: rgb(11, 62, 82);
   width: 50%;
   margin-left: 25%;
   margin-bottom: 50px;
 }
+

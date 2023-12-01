@@ -14,6 +14,7 @@
             background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             background-attachment: fixed;
+            
         }
     </style>
 </head>
@@ -101,8 +102,13 @@
         <div class="nos">
             camacho raúl, caporaso manuel, duran lucas, rubilar agustin, tapia geronimo, pereira luciano 
         </div>
-        <h2></h2>
+        <h2>cuales son nuestros deportes</h2>
+        <div class="nos">
+            <div id="depo">Este es el texto original</div>
+        </div>
     </div>
+
+    
     
 
     <div class="texto-cambiante">
@@ -114,7 +120,7 @@
     <script>
         // Array de textos que quieres mostrar
         const textos = [
-        "NOSOTROS SOMOS DEPOLOGS, UNA PAGINA DE DEPORTES Y ESTADISTICAS PARA LOS AFICIONADOS COMO VOS, UN GRAN AFICIONADO A ESTE GRAN MUNDO", 
+        "NOSOTROS SOMOS DEPOLOGS", 
         "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO"
         ];
         let currentIndex = 0;
@@ -182,6 +188,32 @@
             // Cambiar el texto del elemento
             const elementoTexto = document.getElementById("array2");
             elementoTexto.textContent = fechaImportante;
+        }
+        
+        // Cambiar el texto inicial
+        cambiarTexto();
+        
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+
+    <script>
+         const deportes = [
+             "futbol",
+            "badminton",
+            "baseball", 
+            "tenis",
+            ""
+        ];
+        
+        // Función para cambiar el texto cada 10 segundos
+        function cambiarTexto() {
+            // Obtener el deportes
+            const depo = deportes[currentIndex];
+        
+            // Cambiar el texto del elemento
+            const elementoTexto = document.getElementById("depo");
+            elementoTexto.textContent = deportes;
         }
         
         // Cambiar el texto inicial
