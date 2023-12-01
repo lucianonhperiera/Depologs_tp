@@ -10,9 +10,10 @@
     <style>
         body 
         {
-            background: #3ca0df; /* Fallback color for old browsers */
-            background: -webkit-linear-gradient(to right, #2596ca, #13415e); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #134964, #0e4058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-image: url('./recursos/2.png'); /* Reemplaza 'tu-imagen.jpg' con la URL de tu imagen */
+            background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed;
         }
     </style>
 </head>
@@ -112,9 +113,10 @@
     
     <script>
         // Array de textos que quieres mostrar
-        const textos = ["NOSOTROS SOMOS DEPOLOGS, UNA PAGINA DE DEPORTES Y ESTADISTICAS PARA LOS AFICIONADOS COMO VOS, UN GRAN AFICIONADO A ESTE GRAN MUNDO", 
-        "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO",
-        "jsjhgdjhagdjhagdjhgd", "EL PAN ESTA SOBREVALORADO"];
+        const textos = [
+        "NOSOTROS SOMOS DEPOLOGS, UNA PAGINA DE DEPORTES Y ESTADISTICAS PARA LOS AFICIONADOS COMO VOS, UN GRAN AFICIONADO A ESTE GRAN MUNDO", 
+        "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO"
+        ];
         let currentIndex = 0;
 
         // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
@@ -133,14 +135,16 @@
 
     <script>
         // Array de titulares de noticias
-        const titulares = ["Qué pasa con Lionel Scaloni: el detrás de las dudas por su continuidad en la Selección Argentina", 
+        const titulares = [
+        "Qué pasa con Lionel Scaloni: el detrás de las dudas por su continuidad en la Selección Argentina", 
         "Se conoció lo que le dijo Messi a Rodrygo en el tenso cruce que tuvieron en el clásico entre la Selección Argentina y Brasil", 
         "El ídolo y actual secretario deportivo del Millonario habló sobre el Muñeco, aquellos rumores que lo vinculaban con la política del club y hasta la posibilidad de que vuelva como DT. Además, aseguró que no me dio felicidad que Boca haya perdido la Libertadores",
         "Golazo y elogios. El juvenil que ya citó Scaloni, disfruta Ancelotti y le dio la victoria a Real Madrid en la Champions", 
         "El aviso de Fernando Alonso a Aston Martin para la temporada que viene: “Necesitamos coherencia”", 
         "El rápido accionar de una figura australiana de tenis tras el desmayo de una alcanzapelotas en medio de una entrevista televisiva", 
         "Se fue de su casa a los 15, su novio le enseñó a jugar y a los 24 años es la nueva reina del ajedrez argentino",
-        "Una exingeniera de Aston Martin manda un mensaje a Stroll y pone como ejemplo a Alonso"];
+        "Una exingeniera de Aston Martin manda un mensaje a Stroll y pone como ejemplo a Alonso"
+        ];
 
         // Función para cambiar el texto cada 10 segundos
         function cambiarTexto() {
@@ -159,26 +163,33 @@
         setInterval(cambiarTexto, 10000);
     </script>
 
-      <script>
+    <script>
         // Array de fechas importantes
-        const fechasImportantes = ["5/9/24 Argentina VS Chile", "10/9/24 Argentina VS Colombia", "10/10/20 Argentina VS Venezuela", "15/10/24 Argentina VS Bolovia", "14/10/24 Argentina VS Paraguay", "19/10/24 ARgentina VS Perú"];
-      
+        const fechasImportantes = [
+            "5/9/24 Argentina VS Chile", 
+        "10/9/24 Argentina VS Colombia", 
+        "10/10/20 Argentina VS Venezuela", 
+        "15/10/24 Argentina VS Bolovia", 
+        "14/10/24 Argentina VS Paraguay", 
+        "19/10/24 ARgentina VS Perú"
+        ];
+        
         // Función para cambiar el texto cada 10 segundos
         function cambiarTexto() {
-          // Obtener la fecha importante
-          const fechaImportante = fechasImportantes[currentIndex];
-      
-          // Cambiar el texto del elemento
-          const elementoTexto = document.getElementById("array2");
-          elementoTexto.textContent = fechaImportante;
+            // Obtener la fecha importante
+            const fechaImportante = fechasImportantes[currentIndex];
+        
+            // Cambiar el texto del elemento
+            const elementoTexto = document.getElementById("array2");
+            elementoTexto.textContent = fechaImportante;
         }
-      
+        
         // Cambiar el texto inicial
         cambiarTexto();
-      
+        
         // Establecer un intervalo para cambiar el texto cada 10 segundos
         setInterval(cambiarTexto, 10000);
-      </script>
+    </script>
     <script src="carrousel.js"></script>
     
 </body>

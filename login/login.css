@@ -26,13 +26,14 @@
     position: absolute;
     top: 45%;
     left: 20%;
-    color: rgba(255, 255, 255, 0.849);
+    color: rgba(255, 255, 255, 0.664);
 }
 
 .etq{
-    border-radius: 2%;
-    background-color: rgba(0, 255, 255, 0.062);
+    border-radius: 10%;
+    background-color: rgba(0, 255, 255, 0.13);
     color: aliceblue;
+    
 }
 
 /*
