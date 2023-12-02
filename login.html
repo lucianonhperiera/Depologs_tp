@@ -19,7 +19,7 @@
               <button class="sign-up-btn">Iniciar Sesion</button>
           </div>
       </div>
-      <form class="formulario" action="registro.php" method="post">
+      <form class="formulario">
           <h2 class="create-account">Crear una cuenta</h2>
           <div class="iconos">
               <div class="border-icon">
@@ -40,7 +40,7 @@
       </form>
     </div>
     <div class="container-form sign-in">
-        <form class="formulario" action="./login/login.php" method="post">
+        <form class="formulario">
             <h2 class="create-account">Iniciar Sesion</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -56,7 +56,7 @@
             <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Contraseña">
-            <input type="button" value="Iniciar Sesion" onclick="window.location.href='./home/home.html'">
+            <input type="button" value="Iniciar Sesion">
         </form>
         <div class="welcome-back">
             <div class="message">
@@ -71,7 +71,10 @@
 
   <video class="video" src="./login/Greatest_Sports_Moments.mp4" autoplay="1" muted></video>
 
-  <script src="login/login.js"></script>
+  <script src="./login/scripts/login.js"></script>
+  <script src="./login/scripts/consultas.js"></script>
+  <script src="./login/scripts/registros.js"></script>
+  <script src="./login/scripts/comprobaciones.js"></script>
 
 </body>
 </html>
