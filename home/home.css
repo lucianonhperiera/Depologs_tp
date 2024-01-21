@@ -26,14 +26,16 @@ p{
 .animated-button {
   position: relative;
   display: inline-block;
-  padding: 12px 24px;
+  margin: 5px;
+  padding: 12px 15px;
   border: none;
-  font-size: 16px;
+  text-shadow: 2px 2px 3px black;
+  font-size: 30px;
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;
-  color: #00b2f840;
-  box-shadow: 0 0 0 2px rgba(2, 207, 243, 0.507);
+  color: rgb(253, 253, 253);
+  box-shadow: 0 0 0 2px #0051ffff;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
@@ -165,12 +167,13 @@ h2 {
 }
 
 span{
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .nos{
   color: rgb(255, 255, 255);
-  background-color: rgb(11, 62, 82);
+  font-size: 25px;
+  background-color: rgb(3, 3, 3);
   width: 50%;
   margin-left: 25%;
   margin-bottom: 50px;
