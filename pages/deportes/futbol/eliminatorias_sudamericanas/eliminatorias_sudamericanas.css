@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+   margin: 0px;
+   text-align: center;
+   font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+ background-image: url('../images/fondo_eliminatorias.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+ /* Estilo para el encabezado y la barra de navegación */
+ header {
+   background-color: #252424d0; /* Fondo oscuro para el encabezado */
+   color: #fff; /* Texto en color blanco */
+   text-align: center; /* Centrar el contenido del encabezado */
+   padding: 10px 0; /* Espacio interno en la parte superior e inferior */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+   display: flex; /* Mostrar elementos en una línea */
+   justify-content: space-between; /* Distribuir los elementos de izquierda a derecha */
+   align-items: center; /* Centrar verticalmente los elementos */
+   max-width: auto; /* Ancho máximo de la barra de navegación */
+   margin: 0 auto; /* Centrar la barra de navegación en la página */
+   padding: 0 20px; /* Espacio interno en los lados izquierdo y derecho */
+}
+
+/* Estilo para el logotipo */
+.logo img {
+  width: 250px; /* Tamaño del logotipo */
+  height: 150px;
+}
+
+/* Estilo para los enlaces de navegación */
+.enlaces a {
+   text-decoration: none; /* Quitar subrayado de los enlaces */
+   color: #fff; /* Texto en color blanco */
+   margin: 0 15px; /* Espacio entre los enlaces */
+   font-weight: bold; /* Texto en negrita */
+   font-size: 30px;
+}
+
+/* Estilo para los enlaces de ingreso (Login y Registro) */
+.ingreso a {
+   text-decoration: none; /* Quitar subrayado de los enlaces */
+   color: #fff; /* Texto en color blanco */
+   margin-left:auto; /* Espacio entre los enlaces de ingreso */
+   font-weight: bold; /* Texto en negrita */
+   font-size: 20px;
+}
+
+/*estilos de los botones del nav */
+
+.animated-button {
+   position: relative;
+   display: inline-block;
+   margin: 5px;
+   padding: 12px 15px;
+   border: none;
+   text-shadow: 2px 2px 3px black;
+   font-size: 30px;
+   background-color: inherit;
+   border-radius: 100px;
+   font-weight: 600;
+   color: rgb(253, 253, 253);
+   box-shadow: 0 0 0 2px #0051ffff;
+   cursor: pointer;
+   overflow: hidden;
+   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+ }
+ 
+ .animated-button:hover {
+   box-shadow: 0 0 0 10px #2195f360;
+   color: #ffffff;
+ }
+
+
+
+ h2{
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 10px 10px 10px black;
+  margin-top: 40px;
+}
+
+section {
+margin-top: 200px;
+}
+
+#bundesliga {
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+padding: 10px;
+margin: 150px;
+}
+
+h2{
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+ }
+
+ h1{
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+ }
+
+ .image-container {
+  display: flex;
+  margin-top: 100px;
+}
+
+.image {
+  margin: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.description {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
+  color: #fff;
+}
+
+
+.tabla-posiciones {
+flex: 1;
+}
+
+.tabla-posiciones > h3 {
+color: #fff;
+font-size: 50px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+color: #fff;
+text-shadow: 10px 10px 15px black;
+background-color: #00ff6683;
+font-size: 30px;
+}
+
+th, td, tr {
+border: 1px solid rgb(0, 0, 0);
+padding: 8px;
+text-align: left;
+}
+
+th {
+background-color: #000000;
+font-size: 30px;
+}
+
+
+
+td img {
+max-width: 30px;
+height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Estilo para el footer */
+footer {
+    background-color: #333; /* Fondo oscuro para el footer */
+    color: #fff; /* Texto en color blanco */
+    padding: 20px; /* Espacio interno alrededor del contenido del footer */
+    text-align: center; /* Centrar el contenido del footer */
+  }
+  
+  /* Estilo para los iconos de redes sociales */
+  .redes-sociales a {
+    margin: 0 10px; /* Espacio entre los iconos */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+  }
+  
+  /* Estilo para los iconos específicos de cada red social */
+  .icono-facebook img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icono-twitter img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icono-instagram img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Estilo para la marca de derechos reservados */
+  .derechos-reservados p {
+    margin-top: 20px; /* Espacio superior */
+    font-size: 20px; /* Tamaño de fuente más pequeño para los derechos reservados */
+  }

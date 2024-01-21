@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Rubik+Mono+One&display=swap');
+
+ * {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+ }
+
+ body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./images/home_fondo_messi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ }
+
+  /* Estilo para el encabezado y la barra de navegación */
+  header {
+    background-color: #252424d0; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto en color blanco */
+    text-align: center; /* Centrar el contenido del encabezado */
+    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    display: flex; /* Mostrar elementos en una línea */
+    justify-content: space-between; /* Distribuir los elementos de izquierda a derecha */
+    align-items: center; /* Centrar verticalmente los elementos */
+    max-width: auto; /* Ancho máximo de la barra de navegación */
+    margin: 0 auto; /* Centrar la barra de navegación en la página */
+    padding: 0 20px; /* Espacio interno en los lados izquierdo y derecho */
+}
+
+.logo img {
+  width: 250px; /* Tamaño del logotipo */
+  height: 150px;
+}
+
+/* Estilo para los enlaces de navegación */
+.enlaces a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: #fff; /* Texto en color blanco */
+    margin: 0 15px; /* Espacio entre los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 30px;
+}
+
+/* Estilo para los enlaces de ingreso (Login y Registro) */
+.ingreso a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: #fff; /* Texto en color blanco */
+    margin-left:auto; /* Espacio entre los enlaces de ingreso */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px;
+}
+
+ /*estilos de los botones del nav */
+
+.animated-button {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 15px;
+    border: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 30px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: rgb(253, 253, 253);
+    box-shadow: 0 0 0 2px #0051ffff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 10px #2195f360;
+    color: #ffffff;
+  }
+ 
+
+
+  /* animacion de ligas*/
+
+  .ligas {
+	
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    text-shadow: 5px 5px 5px black;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 8s infinite;
+  }
+  
+  ul, p {
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  @keyframes cambiar {
+    
+    0%{ margin-top: 0;}
+    20%{ margin-top: 0;}
+    
+    25% {margin-top: -40px;}
+    50% {margin-top: -40px;}
+    
+    55% {margin-top: -80px;}
+    80% {margin-top: -80px;}
+    
+    85% {margin-top: -40px;}
+    95% {margin-top: -40px;}
+    
+    100% {margin-top: 0;}
+  }
+
+
+
+
+
+  /* LIGAS*/
+
+
+.principal-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+}
+
+.principal-1 img {
+  width: 300px;
+  height: 300px;
+  background-color:rgba(112, 128, 144, 0.113);
+  border-radius: 80px;
+}
+
+.principal-1 img:hover {
+  filter: saturate(500%);
+}  
+  
+  .principal-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+  }
+  
+  .principal-2 img {
+    width: 250px;
+    height: 250px;
+    background-color:rgba(112, 128, 144, 0.13);
+    border-radius: 80px;
+  }
+
+  .principal-2 img:hover{
+  -webkit-transform:scale(1.3);transform:scale(1.3);}
+
+
+  /* SECCIONES*/
+
+  h2{
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 10px 10px 10px black;
+    margin-top: 40px;
+  }
+
+section {
+  margin-top: 200px;
+}
+
+#premier,#bundesliga,#laLiga,#serieA,#MLS {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 150px;
+}
+
+.texto-noticias {
+  font-size: 60px;
+  color:#fff;
+  margin-top: 20px;
+  text-shadow: 15px 15px 15px #00000083;
+}
+
+
+.noticias {
+  flex: 1;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 20px;
+}
+
+.noticias p, h3 {
+  font-size: 30px;
+}
+
+
+.grande {
+  background-color: #00eeff83;
+}
+
+
+.tabla-posiciones {
+  flex: 1;
+}
+
+.tabla-posiciones > h3 {
+  color: #fff;
+  font-size: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  text-shadow: 10px 10px 15px black;
+  background-color: #00eeff83;
+  font-size: 30px;
+}
+
+th, td, tr {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+  font-size: 30px;
+}
+
+.noticia img {
+  width: 30%;
+}
+
+td img {
+  max-width: 30px;
+  height: auto;
+}
+
+.goleadores, .asistencias{
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 10px 10px 15px black;
+}
+
+ /*CARROUSEL DE NOTICIAS*/
+ 
+ .container-carrousel  {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color:#fff;
+  text-shadow: 10px 10px 5px black;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.book {
+  flex: 0 0 auto;
+  width: 400px;
+  padding: 20px;
+  margin-right: 20px;
+  background-color: #e8e8e8da;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  scroll-snap-align: start;
+}
+
+.book img {
+  max-width: 100%;
+  height: 300px;
+  width: 500px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.book h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.book p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+
+hr{
+  margin-bottom: 50px;
+}
+
+
+/* Estilo para el footer */
+footer {
+  background-color: #333; /* Fondo oscuro para el footer */
+  color: #fff; /* Texto en color blanco */
+  padding: 20px; /* Espacio interno alrededor del contenido del footer */
+  text-align: center; /* Centrar el contenido del footer */
+}
+
+/* Estilo para los iconos de redes sociales */
+.redes-sociales a {
+  margin: 0 10px; /* Espacio entre los iconos */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+/* Estilo para los iconos específicos de cada red social */
+.icono-facebook img {
+  width: 40px;
+  height: 40px;
+}
+
+.icono-twitter img {
+  width: 40px;
+  height: 40px;
+}
+
+.icono-instagram img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilo para la marca de derechos reservados */
+.derechos-reservados p {
+  margin-top: 20px; /* Espacio superior */
+  font-size: 20px; /* Tamaño de fuente más pequeño para los derechos reservados */
+}

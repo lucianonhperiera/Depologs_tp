@@ -1,0 +1,592 @@
+/*estilos y posiciones de las ligas americana y nacional*/
+.ligas {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row; /* Alinear en fila (horizontal) */
+    justify-content: space-between; /* Espacio entre columnas */
+    align-items: center; /* Centrar verticalmente */
+  }
+  .americana {
+    text-align: center;
+  }
+  .nacional {
+    text-align: center;
+}
+  .ligaamericana, .liganacional {
+    width: 98%;
+    display: flex;
+    flex-direction: column; /* Alinea elementos verticalmente */
+  }
+  
+  .ligaamericana{
+    float: left;
+  }
+  
+  .liganacional{
+    float: right;
+  }
+  
+  .objeto1{
+    margin-bottom: 10px; /* Espacio entre elementos */
+  }
+  /*en esta seccion vamos a centrar y distanciar el iframe de tabla de puntos de la lista de equipos*/
+  .puntos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .puntitos{
+    margin-top: 0px;
+  }
+  /*cartas de presentacion de los equipos */
+.cartaspresentacion{
+    text-align: center; 
+    padding-top: 20px;
+    margin-top: 20px;  
+}
+.card {
+    position: relative;
+    display: inline-block;
+    /*align-items: center;*/
+    justify-content: center;
+    margin-top: 20px;
+    margin: 10px;
+    height: 400px;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  .heading{
+    color: rgb(248, 244, 244);
+    font-size: 20px;
+  }
+  /*en esta seccion nosotros agregamos las clases de imagenes de los equipos que queremos agregar a cada tarjeta de presentacion*/
+  .angelesangeles{
+    background-image: url('/pages/deportes/Baseball/equipos/angelesangeles.svg');
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .arizona{
+    background-image: url('/pages/deportes/Baseball/equipos/arizona.svg');
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .boston{
+    background-image: url('/pages/deportes/Baseball/equipos/boston.svg');
+    background-size: 230px 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .baltimore{
+    background-image: url(/pages/deportes/Baseball/equipos/baltimore.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .chicago{
+    background-image: url(/pages/deportes/Baseball/equipos/chicago.svg);
+    background-size: 230px 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .cleveland{
+    background-image: url(/pages/deportes/Baseball/equipos/cleveland.svg);
+    background-size: 230px 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .ditroit{
+    background-image: url(/pages/deportes/Baseball/equipos/detroit.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .houston{
+    background-image: url(/pages/deportes/Baseball/equipos/houston.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .kansas{
+    background-image: url(/pages/deportes/Baseball/equipos/kansas.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .minnesota{
+    background-image: url(/pages/deportes/Baseball/equipos/minnesota.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .yankees{
+    background-image: url(/pages/deportes/Baseball/equipos/yankees.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .oakland{
+    background-image: url(/pages/deportes/Baseball/equipos/oakland.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .seattle{
+    background-image: url(/pages/deportes/Baseball/equipos/seattle.svg);
+    background-size: 240px 340px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .tampa{
+    background-image: url(/pages/deportes/Baseball/equipos/tampa.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .texas{
+    background-image: url(/pages/deportes/Baseball/equipos/texas.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .toronto{
+    background-image: url(/pages/deportes/Baseball/equipos/toroto.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .atlanta{
+    background-image: url(/pages/deportes/Baseball/equipos/atlanta.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .cubs{
+    background-image: url(/pages/deportes/Baseball/equipos/chicagocubs.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .reds{
+    background-image: url(/pages/deportes/Baseball/equipos/cincinnati.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .colorado{
+    background-image: url(/pages/deportes/Baseball/equipos/colorado.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .dodgers{
+    background-image: url(/pages/deportes/Baseball/equipos/losangelesdobgers.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .marlins{
+    background-image: url(/pages/deportes/Baseball/equipos/miamimar.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .milwaukee{
+    background-image: url(/pages/deportes/Baseball/equipos/milwaukee.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .mets{
+    background-image: url(/pages/deportes/Baseball/equipos/metsny.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .phillies{
+    background-image: url(/pages/deportes/Baseball/equipos/philadelphia.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .pirates{
+    background-image: url(/pages/deportes/Baseball/equipos/pittsburgh.svg);
+    background-size: 210px 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .padres{
+    background-image: url(/pages/deportes/Baseball/equipos/sandiego.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .giants{
+    background-image: url(/pages/deportes/Baseball/equipos/sanfrancisco.svg);
+    background-size: 230px 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .cardenales{
+    background-image: url(/pages/deportes/Baseball/equipos/cardenales.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .nacionales{
+    background-image: url(/pages/deportes/Baseball/equipos/washington.svg);
+    background-size: 250px 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #cc1717;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content .heading {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .content .para {
+    line-height: 1.5;
+  }
+  
+  .content .btn {
+    margin-top: 300px;
+    color: #000; /* Cambiamos el color del texto a negro */
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff0000, #ffffff, #0000ff);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out; /* Agregamos una transición para el cambio de fondo */
+}
+
+.content .btn:hover {
+    color: #000; /* Cambiamos el color del texto a negro en hover */
+    background: linear-gradient(45deg, #0000ff, #ffffff, #ff0000); /* Cambiamos los colores en el hover */
+}
+
+  
+/* Estilo de contenedor para las tarjetas de presentación */
+.card {
+  position: relative;
+  display: inline-block;
+  /* Otros estilos... */
+  /* Agrega overflow: hidden; para ocultar el contenido que se desborda */
+  overflow: hidden;
+  /* Definir la escala inicial de las imágenes */
+  transform: scale(1);
+  transition: transform 0.3s; /* Transición suave para el efecto de escala */
+}
+
+/* Estilo de la imagen dentro del contenedor */
+.card .imagen {
+  /* Estilos de imagen... */
+}
+
+/* Agregar el efecto de escala al pasar el cursor sobre el contenedor */
+.card:hover {
+  transform: scale(1.3);
+}
+
+  
+  .card:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+  }
+  
+  .content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+  }
+  
+  .content .btn:active {
+    box-shadow: none;
+  }
+  
+  .cardcambiante {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+  }
+  
+  .card p.small {
+    font-size: 14px;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #00838d;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(21);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+  
+  .card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card2:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+  
+  .card2:hover:before {
+    transform: scale(2.15);
+  }
+  
+  .card3 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card3 .go-corner {
+    opacity: 0.7;
+  }
+  
+  .card3:hover {
+    border: 1px solid #00838d;
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+  
+  .card3:hover p {
+    color: #00838d;
+  }
+  
+  .card3:hover .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+  
+  .card4 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .card4 .go-corner {
+    background-color: #00838d;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+  }
+  
+  .card4 .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+  
+  .card4:hover {
+    border: 1px solid #cd3d73;
+  }
+  
+  .card4 h3 {
+    margin-top: 8px;
+  }
+  
+  .card4:hover .go-corner {
+    margin-right: -12px;
+  }
+  
+  .card4:hover .go-arrow {
+    opacity: 1;
+  }
+  .texto-cambiante{   
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 50vh; /* Altura del viewport */
+}
+
+.iframe{
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+}

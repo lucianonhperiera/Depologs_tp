@@ -1,0 +1,309 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+h1{
+    color: white;
+    font-size: 45px;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Cabecera {
+    text-align: center;
+    background-color: #00000088;
+    border-color: #00000088;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    width: 15%;
+    height: 20%;
+}
+
+.botonera {
+    width: 60%; /* Define el ancho deseado, puedes ajustar este valor según tus necesidades */
+    height: 50px; /* Define la altura deseada, puedes ajustar este valor según tus necesidades */
+    text-align: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    padding-top: 20px; /* Espacio superior para separar de la parte superior de la página */
+    align-items: center;
+    display: flex;
+}
+
+.animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #1f74dc;
+    box-shadow: 0 0 0 2px #0000007d;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    margin-right: 15px;
+  }
+  
+  .animated-button span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #00eeff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button span:first-child {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 5px #2195f360;
+    color: #ffffff;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+  }
+  
+  .animated-button:hover span:last-child {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+  }
+
+
+.izquierda,
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; /* Ocupa la mitad del ancho del contenedor */
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-align: center;
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+.izquierda p,
+.derecha p {
+    background-color: #799ae6; /* Color de fondo del texto */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ /* Estilo para el contenedor principal */
+       .contenedor {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    /* Estilo para las imágenes */
+    .imagen {
+        flex: 0 0 30%; /* Las imágenes ocupan el 30% del contenedor */
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto;
+    }
+    .imagen img{
+        height: 230px;
+        width: 230px;
+    }
+
+    /* Estilo para los párrafos */
+    .parrafo {
+        flex: 1;
+        margin: 0 30px; /* Espacio entre la imagen y el párrafo */
+    }
+
+
+
+
+
+
+     /* Estilo para el contenedor principal */
+     .contenedor {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    /* Estilo para las imágenes */
+    .imagen {
+        flex: 0 0 30%; /* Las imágenes ocupan el 30% del contenedor */
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto;
+    }
+    .imagen img{
+        height: 330px;
+        width: 330px;
+    }
+
+    /* Estilo para los párrafos */
+    .parrafo {
+        flex: 1;
+        margin: 0 20px; /* Espacio entre la imagen y el párrafo */
+    }
+
+    .h1-izquierda {
+            color: #2596ca;
+            text-shadow: 10px 10px 5px black;
+            font-size: 45px;
+            text-align: left; /* Alineamos los títulos a la izquierda */
+            margin: 0; /* Elimina el margen predeterminado del título */
+    }
+
+    .h1-derecha {
+        color: #2596ca;
+        text-shadow: 10px 10px 5px black;
+        font-size: 45px;
+        text-align: right; /* Alineamos los títulos a la izquierda */
+        margin: 0; /* Elimina el margen predeterminado del título */
+    }
+
+    .p-texto-izquierda {
+        font-size: 30px;
+        text-align: left; /*alinear texto a la izquierda*/
+        background-color: #30c8dcab;
+    }
+
+    .p-texto-derecha {
+        font-size: 30px;
+        text-align: right; /*alinear texto a la derecha*/
+        background-color: #30c8dcab;
+    }
+
+    /* Estilo para los párrafos del apartado de Historia */
+
+    .historia {
+        display: flex;
+        justify-content: space-between; /* Espacio entre las columnas */
+        align-items: flex-start; /* Alinear las columnas en la parte superior */
+    }
+
+    .h1-historia {
+        color: #2596ca;
+        text-shadow: 10px 10px 5px black;
+        text-decoration-line: underline;
+        text-align: center;
+    }
+
+    .columna {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        margin: 10px;
+    }
+
+    .titulo-historia {
+        font-size: 40px;
+        color: #2596ca;
+        text-shadow: 10px 10px 5px black;
+        text-decoration-line: underline;
+        transform-origin: center center; /* Alinear el centro del título con el centro de la columna */
+        white-space: nowrap; /* Evitar que el título se ajuste automáticamente */
+    }
+
+    .p-historia {
+        font-size: 30px;
+        text-align: center;
+        background-color: #30c8dcab;
+        margin: 10px;
+        flex: 1;
+    }
+
+    .h1-historia1 {
+        text-align: center;
+        color: #2596ca;
+        text-decoration-line: underline;
+        text-shadow: 10px 10px 5px black;
+    }
+
+    /* Estilo para la lista*/
+
+    .container-lista {
+        text-align: center;
+        background-color: #30c8dcab;
+        font-size: 40px;
+    }
+    
+    .lista-centrada {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .lista-centrada li {
+        margin: 10px 0;
+    }
+
+        /* Estilo para el carrousel*/
+
+    .container-carrousel , #container-carrousel {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color:#2596ca;;
+        text-shadow: 10px 10px 5px black;
+        text-decoration-line: underline;
+    }
+    
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    .imgC {
+        flex: 0 0 auto;
+        width: 300px;
+        padding: 20px;
+        margin-right: 20px;
+        background-color: #e8e8e8da;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        scroll-snap-align: start;
+    }
+    
+    .imgC img {
+        max-width: 100%;
+        width: 200px;
+        border: 1px solid #da0000;
+        border-radius: 4px;
+    }
+    

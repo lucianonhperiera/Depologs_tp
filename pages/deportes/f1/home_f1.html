@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--estilos de css-->
+    <link rel="stylesheet" href="boton_scroll.css">
+    <link rel="stylesheet" href="home_f1.css">
+    <link rel="stylesheet" href="textosinformativos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neues">
+    <!--llamados de paginas-->
+    <link rel="stylesheet" href="tabla de puntos/puntos_pilotos.html">
+    <!--realiza llamados a los diferentes scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--cositas del html que no se tocan-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depologs F1</title>
+    <style>
+        body 
+        {
+            background-image: url('f1blancoyautos.jpg'); /* Reemplaza 'tu-imagen.jpg' con la URL de tu imagen */
+            background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="Cabecera">
+        <div class="Logo">
+            <img src="./f1 depologs b.png" height="50px">
+        </div>
+        <div class="botonera">
+            <button class="animated-button" onclick="window.location.href = '../../home_pages.html'">
+                <span>ATRAS</span>
+                <span></span>
+            </button>
+            <button class="animated-button" onclick="window.location.href = '../home_deportes.html'">
+                <span>DEPORTES</span>
+                <span></span>
+            </button>
+            <button class="animated-button" onclick="window.location.href='../../biblioteca_videos/fotos f1/fotos_f1.html'">
+                <span>BIBLIOTECA</span>
+                <span></span>
+            </button>
+            <button class="animated-button" onclick="window.location.href='../../estadisticas/home_estadisticas.html'">
+                <span>ESTADISTICAS</span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    
+    <!--
+   <div referenciales>
+        <a href="#puntos" class="animated-button">
+            <span>puntos</span>
+            <span></span>
+        </button>
+   </div>
+    -->
+    <!--botones que diregen a diferentes secciones del codigo-->
+    <div class="referenciales">
+        <ul>
+            <li>
+                <a href="#puntos">
+                <button data-text="Awesome" class="button">
+                    <span class="actual-text">&nbsp;puntos&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;puntos&nbsp;</span>
+                </button>
+            </a>
+            </li>
+           <li>
+                <a href="#pilotos">
+                <button data-text="Awesome" class="button">
+                    <span class="actual-text">&nbsp;pilotos&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;pilotos&nbsp;</span>
+                </button>
+                </a>
+           </li>
+            <li>
+                <a href="#fechas">
+                <button data-text="Awesome" class="button">
+                    <span class="actual-text">&nbsp;fechas&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;fechas&nbsp;</span>
+                </button>
+                </a>
+            </li>
+           <li>
+                <a href="#gps">
+                <button data-text="Awesome" class="button">
+                    <span class="actual-text">&nbsp;gp&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;gp&nbsp;</span>
+                </button>
+                </a>
+           </li>
+        </ul>
+
+    </div>
+    <div class="videos">
+        <video controls width="1020" height="500" autoplay muted>
+            <source src="" type="video/mp4">
+            <source src="" type="video/mp4">
+            Tu navegador no admite la reproducción de video.
+        </video>
+    </div>
+    <!--boton de desplazamiento al inicio-->
+    <button id="scrollToTopBtn" onclick="scrollToTop()" class="scroll">
+        <div class="text">
+            <span>Ir</span>
+            <span>A</span>
+            <span>Arriba</span>
+        </div>
+        <div class="clone">
+            <span>Ir</span>
+            <span>A</span>
+            <span>Arriba</span>
+        </div>
+        <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+    </button>
+    <!--contenedor de la gran mayoria de la informacion de la pagina-->
+    <div class="contprincipal">
+        <div class="textosinfo">
+            <div class="puntos" id="puntos">
+                <button class="titulo" >
+                    <p style="font-family: Bebas Neue, sans-serif;">TABLA DE PUNTOS DE CONTRUCTORES Y PILOTOS</p>
+                </button>
+                <div class="puntitos">
+                    <iframe src="tabla de puntos/home_puntos.html" frameborder="0" height="1050" width="600"></iframe>
+                </div>
+            </div>
+            <div class="pilotos" id="pilotos">
+                <button class="titulo">
+                    <p style="font-family: Bebas Neue, sans-serif;">PILOTOS DE LA FORMULA 1</p>    
+                </button>
+                <div class="pilotitos">
+                    <iframe src="pilotos/home_pilotos.html" frameborder="0" height="3550" width="900"></iframe>
+                </div>
+            </div>
+            <div class="fechas" id="fechas">
+                <button class="titulo">
+                    <p style="font-family: Bebas Neue, sans-serif;">FECHAS</p>
+                </button>
+                <div class="fechitas">
+                    <img src="calendario-2023-f1-819x1024.jpeg" alt="">
+                </div>
+                
+            </div>
+            <div class="gps" id="gps">
+                <button class="titulo">
+                    <p style="font-family: Bebas Neue, sans-serif;">GRAN PRIX</p>
+                </button>
+                <!--referenciales de los circuitos-->
+                <div class="buscargp">
+                    <a class="fancy" href="#sakhir">
+                        <span class="top-key"></span>
+                        <span class="text">SAKHIR</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#jeddah">
+                        <span class="top-key"></span>
+                        <span class="text">JEDDAH</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#melbourne">
+                        <span class="top-key"></span>
+                        <span class="text">MELBOURNE</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#shanghai">
+                        <span class="top-key"></span>
+                        <span class="text">SHANGHAI</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#baku">
+                        <span class="top-key"></span>
+                        <span class="text">BAKU</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#miami">
+                        <span class="top-key"></span>
+                        <span class="text">MIAMI</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#imola">
+                        <span class="top-key"></span>
+                        <span class="text">IMOLA</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                </div>
+                <div class="buscargp">
+                    <a class="fancy" href="#monaco">
+                        <span class="top-key"></span>
+                        <span class="text">MONACO</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#barcelona">
+                        <span class="top-key"></span>
+                        <span class="text">BARCELONA</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#montreal">
+                        <span class="top-key"></span>
+                        <span class="text">MONTREAL</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#spielberg">
+                        <span class="top-key"></span>
+                        <span class="text">SPIELBERG</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#silverstone">
+                        <span class="top-key"></span>
+                        <span class="text">SILVERSTONE</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#budapest">
+                        <span class="top-key"></span>
+                        <span class="text">BUDAPEST</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#spa">
+                        <span class="top-key"></span>
+                        <span class="text">SPA</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                </div>
+                <div class="buscargp">
+                    <a class="fancy" href="#zandvoort">
+                        <span class="top-key"></span>
+                        <span class="text">ZANDVOORT</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#monza">
+                        <span class="top-key"></span>
+                        <span class="text">MONZA</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#singapore">
+                        <span class="top-key"></span>
+                        <span class="text">SINGAPORE</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#suzuka">
+                        <span class="top-key"></span>
+                        <span class="text">SUZUKA</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#losail">
+                        <span class="top-key"></span>
+                        <span class="text">LOSAIL</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#austin">
+                        <span class="top-key"></span>
+                        <span class="text">AUSTIN</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <a class="fancy" href="#mexico">
+                        <span class="top-key"></span>
+                        <span class="text">MEXICO</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                </div>
+                <div class="buscargp">
+                        <a class="fancy" href="#sao">
+                            <span class="top-key"></span>
+                            <span class="text">SAO PAULO</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                        <a class="fancy" href="#vegas">
+                            <span class="top-key"></span>
+                            <span class="text">LAS VEGAS</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                        <a class="fancy" href="#yas">
+                            <span class="top-key"></span>
+                            <span class="text">YAS MARINA</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                    </div>
+                <!--grandes premios con su informacion pertinente y su grafico del circuito-->
+                <div class="premio" id="sakhir">
+                    <div class="titulopremio">
+                        <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">SAKHIR</p>
+                        </button>
+                    </div>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/image.png" alt="">
+                    </div>
+                    <div class="infopremio">
+                        <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Sakhir fue una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputó con monoplazas en el Circuito 
+                            Internacional de Baréin, ubicado en la zona desértica de Sakhir, a aproximadamente 31 km de la capital Manama1​.
+                            Formó parte del calendario de la temporada 2020 debido a que el calendario original fue afectado por el inicio de la Pandemia de COVID-19, 
+                            dando lugar a la realización de nuevas carreras para poder completar la temporada. Fue confirmada en agosto de 2020, 
+                            junto a los Grandes Premios de Turquía, Baréin y Abu Dabi. Al igual que el Gran Premio de Baréin, este se corrió en el Circuito Internacional de Baréin, 
+                            con la diferencia de que en esta ocasión se utilizó la pista exterior del circuito.</p>
+                    </button>
+                    </div>
+                </div>
+                <div class="premio" id="jeddah">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">JEDDAH</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/jeddah.png" alt="">
+                    </div>
+                    <div class="infopremio">
+                        <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Arabia Saudita de 2023 fue la segunda ronda de la temporada 2023 de Fórmula 1. 
+                                Se disputó los días 17, 18 y 19 de marzo en el circuito de la Corniche de Yeda, ubicado en la ciudad del mismo nombre (Arabia Saudita).
+                                Lewis Hamilton y Max Verstappen son los únicos pilotos activos que lograron ganar en Arabia Saudita.
+                                El poleman Sergio Pérez fue el vencedor de la carrera, seguido de su compañero Max Verstappen y Fernando Alonso, 
+                                quien posteriormente sería sancionado, cediéndole la posición a George Russell. 
+                                Horas después la escudería Aston Martin hizo una apelación y la FIA revocó la penalización, otorgándole el podio número 100 al piloto español.</p>
+                        </button>
+                    </div> 
+                </div>
+                <div class="premio" id="melbourne">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">MELBOURNE</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/melbourne.avif" alt="">
+                    </div>
+                    <div class="infopremio">
+                        <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Australia de 2023 fue la tercera ronda de la temporada 2023 de Fórmula 1. 
+                                Se disputó los días 31 de marzo, 1 y 2 de abril en el circuito de Albert Park,
+                                ubicado en Melbourne (Australia).​
+                                Fernando Alonso, Lewis Hamilton, Valtteri Bottas y Charles Leclerc son los únicos pilotos activos que lograron ganar en Australia.
+                                Max Verstappen fue el ganador de la carrera, seguido de Lewis Hamilton y Fernando Alonso.​ 
+                                La carrera terminó con el mayor número de banderas rojas, con tres.​ Adicionalmente,
+                                la colisión múltiple en la vuelta 57 está en el tercer puesto de colisiones múltiples de la curva 1, 
+                                siendo superado por la colisión múltiple de la versión de 2008 con 5 eliminados en colisión y por la de la versión de 2002, 
+                                en donde dejaron 8 pilotos eliminados.</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="premio" id="shanghai">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">SHANGHAI</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/shanghai.avif" alt="">
+                    </div>
+                    <div class="infopremio">
+                        <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">La Fórmula 1 tendrá en 2023 un calendario récord, 
+                                pero finalmente serán 23 carreras las que se disputen y no 24 como estaba planeado en un principio. 
+                                China definitivamente no estará en el mundial (como tampoco estuvo en 2020, 2021 ni 2022) y la F1 no lo sustituirá con Portimao, 
+                                ni con Estambul, ni con ninguna otra sede.
+                                China estaba en el calendario original de 24 carreras, antes de que se cancelase cuando empeoró la situación de la COVID-19 en el país. 
+                                Recientemente los organizadores del gran premio trataron de conseguir entrar en el calendario este mismo curso, 
+                                tras relajarse las restricciones contra el coronavirus, 
+                                pero varios impedimentos han hecho que se mantenga la cancelación y que la F1 deje en 23 citas su mundial de 2023.
+                                Ahora, el GP de China, que renovó en 2021 con la Fórmula 1 hasta 2025, 
+                                verá como por cuarta temporada consecutiva Shanghai no es sede del campeonato y tendrán que esperar hasta 2024 para su regreso y, 
+                                si todavía sigue en la parrilla, para que los fans puedan ver por fin en directo a su compatriota, el piloto Guanyu Zhou.</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="premio" id="baku">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">BAKU</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/baku.avif" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Azerbaiyán de 2023 fue la cuarta ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 28, 29 y 30 de abril en el circuito callejero de Bakú, ubicado en la ciudad del mismo nombre (Azerbaiyán).
+                            Lewis Hamilton, Valtteri Bottas, Sergio Pérez y Max Verstappen son los únicos pilotos activos que lograron ganar en Azerbaiyán.
+                            Sergio Pérez fue el ganador de la carrera, el segundo para él como piloto, seguido de su compañero de equipo Max Verstappen y Charles Leclerc.​</p>
+                    </button>
+                </div>
+                <div class="premio" id="miami">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">MIAMI</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/miami.avif" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Miami de 2023 fue la quinta ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 5, 6 y 7 de mayo en el Autódromo Internacional de Miami, Miami Gardens (Estados Unidos).​
+                            Max Verstappen es el único piloto que logró ganar en Miami.
+                            Max Verstappen fue el vencedor de la carrera, seguido del poleman Sergio Pérez y Fernando Alonso.​</p>
+                    </button>
+                </div>
+                <div class="premio" id="imola">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">IMOLA</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/imola.avif" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Autodromo Enzo e Dino Ferrari es un autódromo de 4,9 km situado en Imola, región de Emilia-Romaña, 
+                            Italia, unos 30 km al sureste de la ciudad de Bolonia. Es uno de los principales de su país, 
+                            habiendo albergado carreras de numerosos campeonatos mundiales y europeos de automovilismo de velocidad y motociclismo de velocidad además de italianos.
+                            El circuito llevaba originalmente el nombre de Autodromo di Castellaccio.​ Luego se llamó Autodromo Dino Ferrari en honor a Dino Ferrari, 
+                            hijo de Enzo Ferrari que falleció en 1956 a los 24 años. Cuando Enzo murió en 1988, el nombre pasó a ser el actual.​</p>
+                    </button>
+                </div>
+                <div class="premio" id="monaco">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">MONACO</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/AAMONACO.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Mónaco de 2023 fue la sexta ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 26, 27 y 28 de mayo en el circuito de Mónaco, Montecarlo (Mónaco).
+                            Fernando Alonso, Lewis Hamilton, Max Verstappen y Sergio Pérez son los únicos pilotos activos que lograron ganar en Mónaco.
+                            Max Verstappen fue el ganador de la carrera, seguido de Fernando Alonso y Esteban Ocon.​</p>
+                    </button>
+                </div>
+                <div class="premio" id="barcelona">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">BARCELONA</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/barcelona.avif" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de España de 2023 fue la séptima ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 2, 3 y 4 de junio en el circuito de Barcelona-Cataluña, Montmeló (España).​
+                            Fernando Alonso, Lewis Hamilton y Max Verstappen son los únicos pilotos activos que lograron ganar en España.
+                            Max Verstappen fue el ganador de la carrera tras salir desde la pole, seguido de los pilotos de Mercedes Lewis Hamilton y George Russell.​​</p>
+                    </button>
+                </div>
+                <div class="premio" id="montreal">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">MONTREAL</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/montreal.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Canadá de 2023 fue la octava ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 16, 17 y 18 de junio en el circuito Gilles Villeneuve, Montreal (Canadá).
+                            Fernando Alonso, Lewis Hamilton y Max Verstappen son los únicos pilotos activos que lograron ganar en Canadá.
+                            Max Verstappen logró su victoria número 41 e igualó el récord del brasileño Ayrton Senna. Fernando Alonso y Lewis Hamilton completaron el podio.​​</p>
+                    </button>
+                </div>
+                <div class="premio" id="spielberg">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">SPILBERG</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/spielberg.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Austria de 2023 fue la novena ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 30 de junio, 1 y 2 de julio en el Red Bull Ring, Spielberg (Austria).
+                            Lewis Hamilton, Valtteri Bottas, Max Verstappen y Charles Leclerc son los únicos pilotos activos que lograron ganar en Austria.
+                            Max Verstappen logró su victoria número 42 y superó la marca de Ayrton Senna. Charles Leclerc y Sergio Pérez finalizaron segundo y 
+                            tercero respectivamente en el podio.3​ Sin embargo, equipos como Aston Martin detectó varias irregularidades, 
+                            convirtiendo el GP en un festival de límites de pista.4​​</p>
+                    </button>
+                </div>
+                <div class="premio" id="silverstone">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">SILVERSTONE</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/silverstone.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Gran Bretaña de 2023 fue la décima ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 7, 8 y 9 de julio en el circuito de Silverstone, Northamptonshire, Inglaterra (Reino Unido).
+                            Fernando Alonso, Lewis Hamilton y Carlos Sainz Jr. son los únicos pilotos activos que lograron ganar en Gran Bretaña.
+                            Max Verstappen ganó la carrera, seguido de Lando Norris y Lewis Hamilton.​</p>
+                    </button>
+                </div>
+                <div class="premio" id="budapest">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">BUDAPEST</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/budapest.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Hungría de 2023 fue la undécima ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 21, 22 y 23 de julio en Hungaroring, Mogyoród (Hungría).
+                            Fernando Alonso, Lewis Hamilton, Daniel Ricciardo, Esteban Ocon y Max Verstappen son los únicos pilotos activos que lograron ganar en Hungría.
+                            Max Verstappen se quedó con el triunfo, seguido de Lando Norris y Sergio Pérez.​</p>
+                    </button>
+                </div>
+                <div class="premio" id="spa">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">SPA-FRANCORCHAMPS</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/spa.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Bélgica de 2023 fue la dúodecima ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 28, 29 y 30 de julio en el circuito de Spa-Francorchamps (Bélgica).
+                            Lewis Hamilton, Daniel Ricciardo, Charles Leclerc y Max Verstappen son los únicos pilotos activos que lograron ganar en Bélgica.
+                            Tras 44 vueltas, el ganador fue Max Verstappen, seguido de Sergio Pérez y Charles Leclerc.</p>
+                    </button>
+                </div>
+                <div class="premio" id="zandvoort">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">ZANDVOORT</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/zandvoort.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de los Países Bajos de 2023 fue la decimotercer ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 25, 26 y 27 de agosto en el circuito de Zandvoort, Haarlem (Países Bajos).
+                            Max Verstappen es el único piloto activo que logró ganar en Países Bajos.
+                            Max Verstappen fue el vencedor de la carrera, seguido de Fernando Alonso y Pierre Gasly. </p>
+                    </button>
+                </div>
+                <div class="premio" id="monza">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">MONZA</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/monza.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Italia de 2023 fue la decimocuarta ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 1, 2 y 3 de septiembre en el Autodromo Nazionale di Monza, ubicado en la ciudad del mismo nombre (Italia).
+                            Fernando Alonso, Lewis Hamilton, Charles Leclerc, Pierre Gasly, Daniel Ricciardo y Max Verstappen son los únicos pilotos activos que lograron 
+                            ganar en Italia 
+                            Max Verstappen fue el ganador de la carrera, seguido de su compañero Sergio Pérez y del poleman Carlos Sainz Jr..</p>
+                    </button>
+                </div>
+                <div class="premio" id="singapore">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">SINGAPORE</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/singapore.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Singapur de 2023 fue la decimoquinta ronda de la temporada 2023 de Fórmula 1. 
+                            Se disputó los días 15, 16 y 17 de septiembre en el circuito callejero de Marina Bay, ubicado en la ciudad del mismo nombre (Singapur).
+                            Fernando Alonso, Lewis Hamilton y Sergio Pérez son los únicos pilotos activos que lograron ganar en Singapur.                            
+                            El poleman Carlos Sainz Jr. fue el ganador de la carrera, seguido de Lando Norris y Lewis Hamilton.</p>
+                    </button>
+                </div>
+                <div class="premio" id="suzuka">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">SUZUKA</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/suzuka.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Japón es una carrera de automovilismo de velocidad que se corre en dicho país como 
+                            parte del campeonato de Fórmula 1. Su lugar tradicional al final del calendario hacía que en este evento generalmente se decidieran los campeonatos. 
+                            De los primeros 19 Grandes Premios que se disputaron en Japón, en 12 de ellos se decidió el título mundial (1976, 1987-1991, 1996, 1998-2000, 2003, 
+                            2011 y 2022, siendo el de 1976 en Fuji Speedway y los 11 restantes en el Circuito de Suzuka).
+                            Alain Prost y Ayrton Senna protagonizaron las ediciones 1989 y 1990 cuando disputaban el título de pilotos, en ambos casos con abandonos luego de 
+                            colisiones entre ellos. A fines de la década de 1990 y principios de 2000, Michael Schumacher mantuvo grandes duelos con los rivales de turno, en 
+                            concreto Mika Häkkinen, Kimi Räikkönen y Fernando Alonso.
+                            En 2007 y 2008, el Gran Premio de Japón regresó a Fuji, ahora perteneciente a Toyota. Luego se definió una rotación entre Fuji y Suzuka, 
+                            pero la crisis económica de finales de década motivó a Toyota a dejar de albergar la carrera en Fuji, de modo que Suzuka volvió a ser sede permanente.</p>
+                    </button>
+                </div>
+                <div class="premio" id="losail">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">LOSAIL</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/losail.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Catar es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 
+                            que se disputa anualmente con monoplazas en el Circuito Internacional de Losail, ubicado en la ciudad de Lusail, Catar, 
+                            a aproximadamente 28 kilómetros al norte de la capital Doha. Se celebró por primera vez en la temporada 2021, 
+                            siendo el piloto británico Lewis Hamilton de la escudería Mercedes el primer ganador en la historia del evento</p>
+                    </button>
+                </div>
+                <div class="premio" id="austin">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">AUSTIN</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/austin.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de los Estados Unidos es una competición de automovilismo válida para el campeonato de 
+                            Fórmula 1 que se ha disputado en varias ocasiones desde 1959 en diferentes localidades. Inicialmente formó parte del campeonato estadounidense.</p>
+                    </button>
+                </div>
+                <div class="premio" id="mexico">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">MEXICO</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/mexico.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de la Ciudad de México (anteriormente llamado Gran Premio de México) 
+                            es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el Autódromo Hermanos 
+                            Rodríguez de la Ciudad de México, México. Se realizó por primera vez como un evento no válido para el campeonato de la categoría en 1962, 
+                            para luego ser incluido entre 1963 y 1970, entre 1986 y 1992, y de nuevo desde 2015 hasta la actualidad.
+                            En 2021 se decidió cambiar su nombre de «Gran Premio de México», pasándose a denominar «Gran Premio de la Ciudad de México» a partir de dicha 
+                            temporada.</p>
+                    </button>
+                </div>
+                <div class="premio" id="sao">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">SAO PAULO</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/sao paulo.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de São Paulo (anteriormente Gran Premio de Brasil, 
+                            en portugués: Grande Prêmio do Brasil) es una carrera de automovilismo de velocidad disputada en Brasil desde el año 1972, 
+                            que ha sido válida para el Campeonato Mundial de Fórmula 1 desde 1973. Actualmente se disputa en el Autódromo José Carlos Pace en Interlagos 
+                            (ciudad de San Pablo); anteriormente tuvo lugar también en el Autódromo Internacional Nelson Piquet de Jacarepaguá, Río de Janeiro.
+                            Tradicionalmente, el Gran Premio de Brasil se disputaba en otoño, abriendo la temporada o dentro de las primeras tres pruebas del campeonato. 
+                            En 2004 se disputó a final de temporada debido a unas obras de mejora de las instalaciones de Interlagos; sin embargo, debido al mayor éxito de 
+                            público al pasar a celebrarse en primavera, desde entonces se ha seguido disputando hacia final de temporada, a menudo como la carrera de cierre. 
+                            Por ello, ha sido sede de la definición del campeón con frecuencia en los últimos años. Ejemplos de ellos son el tricampeonato de Vettel, 
+                            el bicampeonato de Fernando Alonso, y los campeonatos de Kimi Räikkonen, Lewis Hamilton y Jenson Button. 
+                            El piloto más victorioso de la carrera es el francés Alain Prost, con seis triunfos. El argentino Carlos Reutemann y el alemán Michael Schumacher 
+                            lo siguen con cuatro conquistas cada uno. Los locatarios que ganaron el Gran Premio de Brasil son los campeones Emerson Fittipaldi, 
+                            Nelson Piquet y Ayrton Senna, al igual que José Carlos Pace y Felipe Massa. El paulista Rubens Barrichello compitió 17 ediciones en Interlagos, 
+                            habiendo conseguido un tercer puesto en 2004 como mejor resultado y 11 abandonos. 
+                            A partir de 2021 pasó a denominarse «Gran Premio de São Paulo».</p>
+                    </button>
+                </div>
+                <div class="premio" id="vegas">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">LAS VEGAS</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/Las_Vegas_Street_Circuit_2023.svg.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">Este evento marcará la primera vez que se celebren carreras de Fórmula Uno en Las Vegas desde el 
+                            Gran Premio del Caesars Palace de 1982. El evento se llevará a cabo alrededor del Strip de Las Vegas en una pista urbana completamente nueva. 
+                            Será el tercer Gran Premio de Estados Unidos que tendrá lugar en el calendario de 2023 después de los Grandes Premios de Miami y Estados Unidos, 
+                            y marcará la primera vez desde 1982 que se celebrarán tres carreras en Estados Unidos en un Fórmula 1. Una temporada.</p>
+                    </button>
+                </div>
+                <div class="premio" id="yas">
+                    <button class="titulo">
+                            <p style="font-family: Bebas Neue, sans-serif;">YAS MARINA</p>
+                    </button>
+                    <div class="imagenpremio">
+                        <img src="/pages/deportes/f1/gp/yas marina.png" alt="">
+                    </div>
+                    <button class="titulo">
+                        <p style="font-family: Bebas Neue, sans-serif;">El Gran Premio de Abu Dabi es una carrera de automovilismo válida para el Campeonato Mundial de 
+                            Fórmula 1 que se disputa anualmente con monoplazas en el Circuito de Yas Marina, ubicado en la Isla de Yas, en Abu Dabi, Emiratos Árabes Unidos. 
+                            En 2009 se convirtió en la segunda carrera en disputarse en la región de Oriente Medio, luego del Gran Premio de Baréin estrenado en 2004. 
+                            La GP2 Series sirvió como telonera desde el 2010 hasta la extinción de la categoría en 2016, a excepción de la temporada 2012. 
+                            A partir de 2017 es telonero el Campeonato de Fórmula 2 de la FIA. La GP2 Asia Series lo hizo en las temporadas 2009-10 y 2011.
+                            La primera edición del Gran Premio, que tuvo lugar el 1 de noviembre de 2009, fue anunciada a principios de 2007 en el Festival de Fórmula 1 
+                            de Abu Dabi. Tiene lugar en noviembre y es la última o penúltima carrera de la temporada.
+                            Después del Gran Premio de Singapur de 2008, la primera carrera de Fórmula 1 corrida de noche, la BBC dio a conocer rumores que afirmaban que los 
+                            organizadores de la carrera de Abu Dabi habrían considerado realizar futuras carreras de noche. Casi un año después, se confirmó que la carrera 
+                            empezaría al atardecer, finalizando por la noche.   
+                            En 2021 tras críticas a la dificultad de adelantamientos en el trazado, se tomaría la decisión de modificar curvas del circuito para impulsar las 
+                            maniobras de sobrepaso, las curvas modificadas fueron las curvas 5, 6, 7, 11, 12, 13, 14, 18, 19, 20.</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="texto-cambiante">
+            <div class="cardcambiante">
+                <a class="card1" href="#">
+                    <p id="textoCambiante">Texto 1</p>
+                    <div class="go-corner" href="#">
+                        <div class="go-arrow">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+   <script src="boton_scroll.js"></script>
+    
+    <script src="home_f1.js"></script>
+
+   
+
+    <script>
+        // Array de textos que quieres mostrar
+        const textos = ["EL FUTBOL SE JUEGA CON UNA PEROTA", "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO",
+        "ESTERNOCLEIDOMASTOIDEO", "EL PAN ESTA SOBREVALORADO"];
+        let currentIndex = 0;
+
+        // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
+        function cambiarTexto() {
+            currentIndex = (currentIndex + 1) % textos.length;
+            const elementoTexto = document.getElementById("textoCambiante");
+            elementoTexto.textContent = textos[currentIndex];
+        }
+
+        // Cambiar el texto inicial
+        cambiarTexto();
+
+        // Establecer un intervalo para cambiar el texto cada 30 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--llamado a los estilos-->
+    <link rel="stylesheet" href="home_pages.css">
+    <link rel="stylesheet" href="botones.css">
+    <link rel="stylesheet" href="cartas_de_presentacion.css">
+    <!--<link rel="stylesheet" href="carta f1.css">-->
+    <link rel="stylesheet" href="menu.css">
+    <!--llamado a los scripts-->
+    <!--coasitas del mismo html no tocar-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>depologs secciones</title>
+    <!--estilos de la pagina-->
+    <style>
+        body 
+        {
+            background: #3ca0df; /* Fallback color for old browsers */
+            background: -webkit-linear-gradient(to right, #248cbd, #0e3750); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #134964, #3595c2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style>
+</head>
+<body>
+    <!--botones de la parte superior-->
+    <div class="botonera">
+        <!--botones con estilo-->
+        <button class="animated-button" onclick="window.location.href='deportes/home_deportes.html'">
+            <span>DEPORTES</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href='biblioteca_videos/home_videos.html'">
+            <span>BIBLIOTECA</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href='estadisticas/home_estadisticas.html'">
+            <span>ESTADISTICAS</span>
+            <span></span>
+        </button>
+    </div>
+    <!--cartas de presentacion de los deportes-->
+    <div class="cartaspresentacion">
+        <!--estas son las cartas que de ven separadas-->
+        <div class="card">
+            <!--este divi sirve para poner una imagen de fondo-->
+            <div class="futbol">
+                <div class="content">
+                    <p class="heading">
+                        FUTBOL
+                    </p>
+                    <p class="para">
+                    </p>
+                    <button class="btn" onclick="window.location.href = 'deportes/futbol/home_futbol.html'">llevame a Futbol</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="handball">
+                <div class="content">
+                <p class="heading">
+                    HANDBALL
+                </p>
+                <p class="para">
+                </p>
+                <button class="btn" onclick="window.location.href = 'deportes/BalonMano/Presentacion/home_presentacion.html'">llevame a Handball</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="badminton">
+                <div class="content">
+                <p class="heading">
+                    BADMINTON
+                </p>
+                <p class="para">
+                </p>
+                <button class="btn" onclick="window.location.href = 'deportes/badminton/index.html'">llevame a Badminton</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="baseball">
+                <div class="content">
+                <p class="heading">
+                    BASEBALL
+                </p>
+                <p class="para">
+                </p>
+                <button class="btn" onclick="window.location.href = 'deportes/Baseball/home_baseball.html'">llevame a Baseball</button>
+                </div>
+            </div>
+        </div>
+            <div class="card">
+                <div class="tenis">
+                    <div class="content">
+                    <p class="heading">
+                        TENIS
+                    </p>
+                    <p class="para">
+                    </p>
+                    <button class="btn">llevame a tenis</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="voley">
+                <div class="content">
+                <p class="heading">
+                    VOLEY
+                </p>
+                <p class="para">
+                </p>
+                <button class="btn" onclick="window.location.href = 'deportes/voley/home_voley.html'">llevame a Voley</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="strike">
+                <div class="content">
+                    <p class="heading">
+                        E-SPORT COUNTER STRIKE
+                    </p>
+                    <p class="para"> 
+                    </p>
+                    <button class="btn">llevame a counter strike</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="f1">
+                <div class="content">
+                <p class="heading">
+                    F1
+                </p>
+                <p class="para">
+                </p>
+                <button class="btn" onclick="window.location.href = 'deportes/f1/home_f1.html'">llevame a f1</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="valorant">
+                <div class="content">
+                    <p class="heading">
+                        E-SPORT VALORANT
+                    </p>
+                    <p class="para">
+                    </p>
+                    <button class="btn">llevame a valorant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--texto que cambia cada 10 segundos-->
+    <div class="texto-cambiante">
+        <div class="cardcambiante">
+            <a class="card1" href="#">
+             <p id="textoCambiante">Texto 1</p>
+             <div class="go-corner" href="#">
+                <!--este div sirve para poder poner algún caracter en la parte superior del estilo-->
+               <div class="go-arrow">
+                 
+               </div>
+             </div>
+           </a>
+         </div>
+        
+    </div>
+    
+    <script>
+        // Array de textos que quieres mostrar
+        const textos = ["EL FUTBOL SE JUEGA CON UNA PELOTA", "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO",
+        "EL VOLEY TIENE UNA RED PARA DIVIDIR LA CANCHA", "EL PAN ESTA SOBREVALORADO"];
+        let currentIndex = 0;
+
+        // Función para cambiar el texto cada 10 segundos (10000 milisegundos)
+        function cambiarTexto() {
+            currentIndex = (currentIndex + 1) % textos.length;
+            const elementoTexto = document.getElementById("textoCambiante");
+            elementoTexto.textContent = textos[currentIndex];
+        }
+
+        // Cambiar el texto inicial
+        cambiarTexto();
+
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
+        setInterval(cambiarTexto, 10000);
+
+    </script>
+
+</body>
+</html>

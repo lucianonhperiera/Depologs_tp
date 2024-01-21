@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../home_videos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neues">
+    <link rel="stylesheet" href="f1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depologs Biblioteca</title>
+    <style>
+        body 
+        {
+            background-image: url('./formula-1-logo-uhd-4k-wallpaper.jpg'); /* Reemplaza 'tu-imagen.jpg' con la URL de tu imagen */
+            background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="botonera">
+        <button class="animated-button" onclick="window.location.href = '../../home_pages.html'">
+            <span>ATRAS</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href = '../home_videos.html'">
+            <span>BIBLIOTECA</span>
+            <span></span>
+        <button class="animated-button" onclick="window.location.href = '../../deportes/home_deportes.html'">
+            <span>DEPORTES</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href = '../../estadisticas/home_estadisticas.html'">
+            <span>ESTADISTICAS</span>
+            <span></span>
+        </button>
+    </div>
+    <!--referenciales de la biblioteca-->
+    <div class="referenciales">
+        <a href="#fotos">
+            <button class="btn" ><i class="animation"></i>FOTOS<i class="animation"></i>
+            </button>
+        </a>
+        <a href="#videos">
+            <button class="btn"><i class="animation"></i>VIDEOS<i class="animation"></i>
+            </button>
+        </a>
+    </div>
+    
+     <!--boton que te lleva al inicio de la pagina-->
+     <button id="scrollToTopBtn" onclick="scrollToTop()" class="scroll">
+        <div class="text">
+            <span>Ir</span>
+            <span>A</span>
+            <span>Arriba</span>
+        </div>
+        <div class="clone">
+            <span>Ir</span>
+            <span>A</span>
+            <span>Arriba</span>
+        </div>
+        <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+    </button>
+
+    <!--boton donde nos dirigira a la seccion del deporte marcado en el mismo-->
+    <div class="seccion" id="fotos">
+        <button class="uiverse">
+            <div class="wrapper">
+                <span>FOTOS</span>
+                <div class="circle circle-12"></div>
+                <div class="circle circle-11"></div>
+                <div class="circle circle-10"></div>
+                <div class="circle circle-9"></div>
+                <div class="circle circle-8"></div>
+                <div class="circle circle-7"></div>
+                <div class="circle circle-6"></div>
+                <div class="circle circle-5"></div>
+                <div class="circle circle-4"></div>
+                <div class="circle circle-3"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-1"></div>
+            </div>
+        </button>
+    </div>
+    <!--carousel de fotos-->
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./Imagenes_voley/noticia1.jpg"></p>
+            <p><img src="./Imagenes_voley/noticia2.jpg"></p>
+            <p><img src="./Imagenes_voley/noticia3.jpg"></p>
+            <p><img src="./Imagenes_voley/noticia4.jpeg"></p>
+            <p><img src="./Imagenes_voley/noticia5.jpg"></p>
+            <p><img src="./1214052.png"></p>
+        </div>
+    </div>
+    <!--carousel de videos-->
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./1214054.png"></p>
+            <p><img src="./1214059.png"></p>
+            <p><img src="./1215648.jpg"></p>
+            <p><img src="./1215704.jpg"></p>
+            <p><img src="./1225154.jpg"></p>
+            <p><img src="./1294336.jpg"></p>
+        </div>
+    </div>
+    <!--boton para ver mas contenido de la biblioteca de cada uno de los deportes-->
+    <!--<div class="btnmas">
+        <button class="buttonmas">
+            <span class="button-border">
+                <p style="font-family: Bebas Neue, sans-serif;">VER MAS FOTOS Y VIDEOS</p>
+            </span>
+        </button>
+    </div>-->
+    <!--<div class="seccion" id="handball">
+        <button class="uiverse">
+            <div class="wrapper">
+                <span>HANDBALL</span>
+                <div class="circle circle-12"></div>
+                <div class="circle circle-11"></div>
+                <div class="circle circle-10"></div>
+                <div class="circle circle-9"></div>
+                <div class="circle circle-8"></div>
+                <div class="circle circle-7"></div>
+                <div class="circle circle-6"></div>
+                <div class="circle circle-5"></div>
+                <div class="circle circle-4"></div>
+                <div class="circle circle-3"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-1"></div>
+            </div>
+        </button>
+    </div>-->
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./16757848571758.jpg"></p>
+            <p><img src="./16909168226523.jpg"></p>
+            <p><img src="./1704097-Mercedes-F1-Mercedes-Benz-IWC-racing-Formula-1.jpg"></p>
+            <p><img src="./1855020.jpg"></p>
+            <p><img src="./1902316.png"></p>
+            <p><img src="./1kjxu60n4uqb1.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./2019BrazilianGrandPrixSunday_2ST8108.jpg"></p>
+            <p><img src="./2020_07_formula-1-android-4k-5k-8k-backgrounds-for-desktop-and-mobile.jpg"></p>
+            <p><img src="./2021-new-redbull-f1-car-wallpaper-3840x2160_54.jpg"></p>
+            <p><img src="./2022-bwt-alpine-f1-team-4k-pu.jpg"></p>
+            <p><img src="./226176.jpg"></p>
+            <p><img src="./226401.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./23730.jpg"></p>
+            <p><img src="./378720-4k-wallpaper.jpg"></p>
+            <p><img src="./379324-4k-wallpaper.jpg"></p>
+            <p><img src="./407648-Formula-1-formula-cars-car-Mercedes-F1.jpg"></p>
+            <p><img src="./41394.jpg"></p>
+            <p><img src="./46e8b139b3368c03cb5d6e5e9d08a1c9.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./4MFXLG6VUNHQDLO66PWNZT3JLI.jpg"></p>
+            <p><img src="./5002417-red-bull-f1-hd-cars.jpg"></p>
+            <p><img src="./517106-Racing-F1-Ferrari-Michael-Schumacher-Race-Car.jpg"></p>
+            <p><img src="./52666-Car-Formula-1Formula-1-4k-Ultra-HD-Wallpaper.jpg"></p>
+            <p><img src="./5aa-Bahrain-F1-Testing.jpg"></p>
+            <p><img src="./64bd395cd26c3.r_d.1221-872-4703.jpeg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./6514c115e4b0d19cff8e1a58-1695940158507.jpg"></p>
+            <p><img src="./90544-red-bull-f1-4k-hd-behance-artist-cars.jpg"></p>
+            <p><img src="./alfa-romeo-f1-2022_1ui40ddfzdhzuzvjuslbpwsy3.jpg"></p>
+            <p><img src="./alfa_romeo_c42_2022_formula_one_car_4k_4-HD.jpg"></p>
+            <p><img src="./alfa_romeo_c43_f1_2023_4k_8k-HD.jpg"></p>
+            <p><img src="./alpha-tauri-formula-1-2022.jpeg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./aston-martins-canadian-driver-lance-stroll-drives-during-news-photo-1625924666.jpg"></p>
+            <p><img src="./aston_martin_amr21_2021_f1_car_4k_8k-HD.jpg"></p>
+            <p><img src="./aston_martin_amr21_f1_2023-wallpaper-3840x2160.jpg"></p>
+            <p><img src="./BdOSR4.jpg"></p>
+            <p><img src="./carlos-sainz-of-spain-driving-the-scuderia-ferrari-f1-75-on-news-photo-1645648045.jpg"></p>
+            <p><img src="./coche01.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./dd0367f7ef43caa1d9a8aa92e0c72900.jpg"></p>
+            <p><img src="./e11e96ea237e2b0818c84bcd59f9d1ca.jpg"></p>
+            <p><img src="./f1-hfubqbf4vngbuqur.jpg"></p>
+            <p><img src="./ferrari-f1-75-2022-formula-1-2-4k-5k-hd-cars-wallpapers.jpg"></p>
+            <p><img src="./ferrari-sf21-f1-2021-f1-cars-2021-formula-one-world-2880x1800-4865.jpeg"></p>
+            <p><img src="./ferrari_f1_23_2023_4k-HD.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./ferrari_sf_23_f1_2023_car_4k_8k_hd_cars-7680x4320.jpg"></p>
+            <p><img src="./Fg4rcCxXgAMXyPm.jpg"></p>
+            <p><img src="./FIA_F1_Austria_2021_Nr._99_Giovinazzi_(side).jpg"></p>
+            <p><img src="./FIA_F1_Austria_2022_Nr._22_Tsunoda.jpg"></p>
+            <p><img src="./FIA_F1_Austria_2023_Nr._21_(1).jpg"></p>
+            <p><img src="./formula--the-great-ayrton-senna-wallpaper.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./formula-1-4k-wallpaper-scaled.jpg"></p>
+            <p><img src="./formula-1-logo-uhd-4k-wallpaper.jpg"></p>
+            <p><img src="./hamilton-f1-8qfw565d3v92oelw.jpg"></p>
+            <p><img src="./large-alfa-romeo-f1-team-stake-x-boogie-art-car-1675160369.jpg"></p>
+            <p><img src="./M362309.jpg"></p>
+            <p><img src="./max-verstappen-of-the-netherlands-driving-the-red-bull-news-photo-1618041993_.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./mclaren-2018-f1-ec.jpg"></p>
+            <p><img src="./mclaren-f1-2023-temporada-grandes-premios-jeddah-1.jpg"></p>
+            <p><img src="./mclaren-mcl35m-formula-one-cars-f1-cars-2021-5k-3840x2160-5428.jpeg"></p>
+            <p><img src="./nba-plain--3d5a6a04-ae11-45b7-bdb3-25bc3c2732e6.png"></p>
+            <p><img src="./presentacion-equipo-alfa-romeo-f1-2023-motorpoint-1.jpg"></p>
+            <p><img src="./PVVXNH5OWQT2CJ6GXLMCWYEUUE.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./red_bull_rb18_2022_formula_1_4k-HD.jpg"></p>
+            <p><img src="./scuderia-alphatauri-f1-2023-car-at04.jpg"></p>
+            <p><img src="./sergio-perez-of-mexico-driving-the-oracle-red-bull-racing-news-photo-1694968408.jpg"></p>
+            <p><img src="./SI202203200184_hires_jpeg_24bit_rgb.jpg"></p>
+            <p><img src="./SI202211170690_hires_jpeg_24bit_rgb.jpg"></p>
+            <p><img src="./SI202303050190_hires_jpeg_24bit_rgb.jpg"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./Sin2023_Liam2_2732x2048.jpg"></p>
+            <p><img src="./skynews-formula-1-formula-one_5825542.jpg"></p>
+            <p><img src="./thumb-1920-1211643.jpg"></p>
+            <p><img src="./valtteri-bottas-4k-f1-formula-1-mercedes-amg-team.jpg"></p>
+            <p><img src="./VHA2EGC7FJDDTJQMUVAHS5DRSY.jpg"></p>
+            <p><img src="./W14_Wallpaper_1_-_Lewis_Hamilton.png"></p>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="card">
+            <p><img src="./Wallpaper-Renault-R.S.18-F1-Cars-2018-4k-Formula-One44.jpg"></p>
+            <p><img src="./wallpapersden.com_red-bull-racing-2022-formula-one-2022_3200x2234.jpg"></p>
+            <p><img src="./wp11885528.jpg"></p>
+            <p><img src="./wp8656100.jpg"></p>
+            <p><img src="./yuki-tsunoda-of-alphatauri-on-track-during-free-practice-news-photo-1694261889.jpg"></p>
+            <p><img src=""></p>
+        </div>
+    </div>
+    <!--seccion de videos-->
+    <div class="seccion">
+        <button class="uiverse" id="videos">
+            <div class="wrapper">
+                <span>VIDEOS</span>
+                <div class="circle circle-12"></div>
+                <div class="circle circle-11"></div>
+                <div class="circle circle-10"></div>
+                <div class="circle circle-9"></div>
+                <div class="circle circle-8"></div>
+                <div class="circle circle-7"></div>
+                <div class="circle circle-6"></div>
+                <div class="circle circle-5"></div>
+                <div class="circle circle-4"></div>
+                <div class="circle circle-3"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-1"></div>
+            </div>
+        </button>
+    </div>
+
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="carousel">
+            <div class="card">
+                <video src="" controls="autoplay" width="550"></video>
+                <video src="" controls="autoplay" width="550"></video>
+            </div>
+        </div>
+    </div>
+    
+    <!--<div class="btnmas">
+        <button class="buttonmas">
+            <span class="button-border">
+                <p style="font-family: Bebas Neue, sans-serif;">VER MAS FOTOS Y VIDEOS</p>
+            </span>
+        </button>
+    </div>-->
+   
+    <!--EN ESTA PARTE SE ENCUENTRA EL TEXTO CAMBIANTE-->
+    <div class="texto-cambiante">
+        <div class="cardcambiante">
+            <a class="card1" href="#">
+             <p id="textoCambiante">Texto 1</p>
+             <div class="go-corner" href="#">
+               <div class="go-arrow">
+                 
+               </div>
+             </div>
+           </a>
+         </div>
+        
+    </div>
+    
+    <script src="../home_videos.js"></script>
+
+    <script>
+        // Array de textos que quieres mostrar
+        const textos = ["EL FUTBOL SE JUEGA CON UNA PELOTA", "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO",
+        "asdasdasasdasdasdasd ", "EL PAN ESTA SOBREVALORADO"];
+        let currentIndex = 0;
+
+        // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
+        function cambiarTexto() {
+            currentIndex = (currentIndex + 1) % textos.length;
+            const elementoTexto = document.getElementById("textoCambiante");
+            elementoTexto.textContent = textos[currentIndex];
+        }
+
+        // Cambiar el texto inicial
+        cambiarTexto();
+
+        // Establecer un intervalo para cambiar el texto cada 30 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+</body>
+</html>

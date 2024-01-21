@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neues">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPOLOGS</title>
+    
+    <style>
+        body 
+        {
+            background-image: url('./recursos/2.png'); /* Reemplaza 'tu-imagen.jpg' con la URL de tu imagen */
+            background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="botonera">
+        <img class="idp" src="./recursos/WhatsApp Image 2023-10-31 at 19.36.45.jpeg" alt="">
+        <button class="animated-button" onclick="window.location.href='../pages/home_pages.html'">
+            <span>INICIO</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href='../pages/deportes/home_deportes.html'">
+            <span>DEPORTES</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href='../pages/biblioteca_videos/home_videos.html'">
+            <span>BIBLIOTECA</span>
+            <span></span>
+        </button>
+        <button class="animated-button" onclick="window.location.href='../pages/estadisticas/home_estadisticas.html'">
+            <span>ESTADISTICAS</span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="rotativas">
+        <div class="deportesnoticias" id="deportivas">
+            <h2>Noticias Deportivas</h2>
+            <div id="array1" class="info">Este es el texto original</div>
+        </div>
+
+        <div class="fechas" id="fechas">
+            <h2>Fechas y Horarios de Deportes</h2>
+            <div id="array2" class="info">Este es el texto original</div>
+        </div>
+
+        <div class="carousel-container">
+        
+            <div class="carousel" id="publicidades">
+                <h2>Publicidades</h2>
+                <div class="carousel-inner">
+                    <div><img src="./asets/12312312323.jpg" alt="Noticia 2"></div>
+                    <div><img src="./asets/adidas-logo-adidas-icon-free-free-vector.jpg" alt="Noticia 1"></div>
+                    <div><img src="./asets/Logo-de-Amazon.webp" alt="Noticia 3"></div>
+                    <div><img src="./asets/descarga.png" alt="Noticia 3"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="nosotros" id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <div class="nos">
+            Nosotros somos depologs, un proyecto creado con la tarea de informar 
+            y dar las mejores soluciones en el mundo de las apuestas deportivas con nuestro amplio catalogo de deportes y estadisticas deportivas 
+            para que puedas tomar la mejor dicision al momento de hacer tus apuestas online, tambien contamos con un amplio catalogo de fotos y videos en nuesta biblioteca
+            multimedia con tus deportes favoritos
+        </div>
+        <h2>nuestra mision</h2>
+        <div class="nos">
+            "Depologs" se compromete a proporcionar a los
+            apasionados del deporte y las apuestas una
+            plataforma confiable y enriquecedora que
+            combine estadísticas detalladas, contenido
+            multimedia y un sistema de apuestas
+            inteligentes. Nuestra misión es empoderar a los
+            usuarios, permitiéndoles tomar decisiones
+            informadas y disfrutar de una experiencia
+            deportiva más enriquecedora.
+        </div>
+        <h2>nuestra vision</h2>
+        <div class="nos">
+            La visión de "Depologs" es convertirse en la
+            principal fuente de referencia para todos los
+            apasionados del deporte y las apuestas.
+            Visualizamos un futuro en el que cualquier
+            persona interesada en el mundo del deporte
+            recurra a "Depologs" para obtener información
+            confiable y emocionante, y para tomar
+            decisiones de apuestas más inteligentes.
+        </div>
+        <h2>nuestros integrantes </h2>
+        <div class="nos">
+            camacho raúl, caporaso manuel, duran lucas, rubilar agustin, tapia geronimo, pereira luciano 
+        </div>
+        <h2>cuales son nuestros deportes</h2>
+        <div class="nos">
+            <div id="depo">Este es el texto original</div>
+        </div>
+    </div>
+
+    
+    
+
+    <div class="texto-cambiante">
+        <p id="textoCambiante" class="cambia">Texto 1</p>
+    </div>
+
+    
+    
+    <script>
+        // Array de textos que quieres mostrar
+        const textos = [
+        "NOSOTROS SOMOS DEPOLOGS", 
+        "LA FORMULA 1 ES LA MAXIMA CATEGORIA DEL AUTOMIVILISMO"
+        ];
+        let currentIndex = 0;
+
+        // Función para cambiar el texto cada 2 minutos (120,000 milisegundos)
+        function cambiarTexto() {
+            currentIndex = (currentIndex + 1) % textos.length;
+            const elementoTexto = document.getElementById("textoCambiante");
+            elementoTexto.textContent = textos[currentIndex];
+        }
+        
+        // Cambiar el texto inicial
+        cambiarTexto();
+
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+
+    <script>
+        // Array de titulares de noticias
+        const titulares = [
+        "Qué pasa con Lionel Scaloni: el detrás de las dudas por su continuidad en la Selección Argentina", 
+        "Se conoció lo que le dijo Messi a Rodrygo en el tenso cruce que tuvieron en el clásico entre la Selección Argentina y Brasil", 
+        "El ídolo y actual secretario deportivo del Millonario habló sobre el Muñeco, aquellos rumores que lo vinculaban con la política del club y hasta la posibilidad de que vuelva como DT. Además, aseguró que no me dio felicidad que Boca haya perdido la Libertadores",
+        "Golazo y elogios. El juvenil que ya citó Scaloni, disfruta Ancelotti y le dio la victoria a Real Madrid en la Champions", 
+        "El aviso de Fernando Alonso a Aston Martin para la temporada que viene: “Necesitamos coherencia”", 
+        "El rápido accionar de una figura australiana de tenis tras el desmayo de una alcanzapelotas en medio de una entrevista televisiva", 
+        "Se fue de su casa a los 15, su novio le enseñó a jugar y a los 24 años es la nueva reina del ajedrez argentino",
+        "Una exingeniera de Aston Martin manda un mensaje a Stroll y pone como ejemplo a Alonso"
+        ];
+
+        // Función para cambiar el texto cada 10 segundos
+        function cambiarTexto() {
+        // Obtener el titular de la noticia
+        const titular = titulares[currentIndex];
+
+        // Cambiar el texto del elemento
+        const elementoTexto = document.getElementById("array1");
+        elementoTexto.textContent = titular;
+        }
+
+        // Cambiar el texto inicial
+        cambiarTexto();
+
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+
+    <script>
+        // Array de fechas importantes
+        const fechasImportantes = [
+            "5/9/24 Argentina VS Chile", 
+        "10/9/24 Argentina VS Colombia", 
+        "10/10/20 Argentina VS Venezuela", 
+        "15/10/24 Argentina VS Bolovia", 
+        "14/10/24 Argentina VS Paraguay", 
+        "19/10/24 ARgentina VS Perú"
+        ];
+        
+        // Función para cambiar el texto cada 10 segundos
+        function cambiarTexto() {
+            // Obtener la fecha importante
+            const fechaImportante = fechasImportantes[currentIndex];
+        
+            // Cambiar el texto del elemento
+            const elementoTexto = document.getElementById("array2");
+            elementoTexto.textContent = fechaImportante;
+        }
+        
+        // Cambiar el texto inicial
+        cambiarTexto();
+        
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+
+    <script>
+         const deportes = [
+             "futbol",
+            "badminton",
+            "baseball", 
+            "tenis",
+            "voley",
+        ];
+        
+        // Función para cambiar el texto cada 10 segundos
+        function cambiarTexto() {
+            // Obtener el deportes
+            const depo = deportes[currentIndex];
+        
+            // Cambiar el texto del elemento
+            const elementoTexto = document.getElementById("depo");
+            elementoTexto.textContent = deportes;
+        }
+        
+        // Cambiar el texto inicial
+        cambiarTexto();
+        
+        // Establecer un intervalo para cambiar el texto cada 10 segundos
+        setInterval(cambiarTexto, 10000);
+    </script>
+    <script src="carrousel.js"></script>
+    
+</body>
+</html>

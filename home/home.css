@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+   font-family: 'Bebas Neue', sans-serif;
+}
+
+p{
+  color: #ffffff;
+  font-size: 30px;
+}
+/*estilos de los botones */
+.idp{
+  position: absolute;
+  height: 10%;
+  width: 5%;
+  left: 5%;
+}
+
+.botonera{
+  text-align: center; /* Centra horizontalmente los elementos dentro del contenedor */
+  padding-top: 20px; /* Espacio superior para separar de la parte superior de la página */
+}
+.animated-button {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 15px;
+  border: none;
+  text-shadow: 2px 2px 3px black;
+  font-size: 30px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(253, 253, 253);
+  box-shadow: 0 0 0 2px #0051ffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #00eeff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 5px #2195f360;
+  color: #ffffff;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+
+/* centra el texto que cambia */
+.texto-cambiante{   
+  position: absolute;
+  top: 250%;
+  width: 50%;
+  margin-left: 25%;
+}
+
+
+/*noticias */
+
+.deportesnoticias{
+  position: absolute;
+  top: 20%;
+  margin-left: 10%;
+  height: 350px;
+  width: 15%;
+  margin-bottom: 30px;
+}
+
+/*fechas*/
+
+.fechas{
+  position: absolute;
+  top: 20%;
+  margin-left: 40%;
+  height: 350px;
+  width: 15%;
+  margin-bottom: 30px;
+}
+
+/*info de los eventos*/
+
+.info{
+  display: flex;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+
+
+/* CARROUSEL*/
+
+.carousel-container {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  margin: 10px;*/
+
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  margin-bottom: 30px;
+  width: 40%;
+}
+
+
+.carousel {
+  text-align: center;
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+}
+
+
+.carousel-inner div {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-inner div img {
+  width: 50%;
+  height: 100%;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+/*body del home*/
+
+.nosotros{
+  margin-top: 20px;
+  position: absolute;
+  top: 110%;
+}
+
+span{
+  font-size: 20px;
+}
+
+.nos{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  background-color: rgb(3, 3, 3);
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 50px;
+}
+

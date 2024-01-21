@@ -1,0 +1,46 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    background: transparent; /* Fondo transparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos específicos para cada tabla */
+.liga-nacional {
+    margin-bottom: 30px;
+}
+
+.liga-americana {
+    margin-top: 30px;
+}
+/* Ajuste del ancho de las columnas en la tabla de la Liga Americana */
+.liga-americana table {
+    width: auto; /* Ancho automático */
+}
+
+/* Ajuste del ancho de las columnas en la tabla de la Liga Nacional */
+.liga-nacional table {
+    width: auto; /* Ancho automático */
+}
